@@ -255,30 +255,31 @@ document.head.insertAdjacentHTML('beforeend', `
 
     // Gestion des boutons "En savoir plus" avec animation de scroll
     const expandButtons = document.querySelectorAll('.expand-details');
+    console.log('Found expand buttons:', expandButtons.length);
     
-    expandButtons.forEach(button => {
+    expandButtons.forEach((button, index) => {
+        console.log('Setting up button', index);
         button.addEventListener('click', function() {
+            console.log('Button clicked!');
             const detailsPanel = this.nextElementSibling;
-            const actionCard = this.closest('.action-card');
+            console.log('Details panel:', detailsPanel);
             
             // Toggle du panneau de détails
             const isExpanded = detailsPanel.classList.contains('active');
+            console.log('Is expanded:', isExpanded);
             
             // Fermer tous les autres panneaux
             document.querySelectorAll('.details-panel.active').forEach(panel => {
                 if (panel !== detailsPanel) {
                     panel.classList.remove('active');
-                    panel.style.maxHeight = '0';
                 }
             });
             
             // Toggle du panneau actuel
             if (isExpanded) {
                 detailsPanel.classList.remove('active');
-                detailsPanel.style.maxHeight = '0';
             } else {
                 detailsPanel.classList.add('active');
-                detailsPanel.style.maxHeight = detailsPanel.scrollHeight + 'px';
                 
                 // Animation de scroll fluide vers le panneau ouvert
                 setTimeout(() => {
@@ -287,7 +288,7 @@ document.head.insertAdjacentHTML('beforeend', `
                         block: 'center',
                         inline: 'nearest'
                     });
-                }, 100); // Petit délai pour que l'animation d'ouverture commence
+                }, 100);
                 
                 // Animation en cascade des éléments de la liste
                 const listItems = detailsPanel.querySelectorAll('.key-points li');
@@ -299,7 +300,7 @@ document.head.insertAdjacentHTML('beforeend', `
                     setTimeout(() => {
                         item.style.opacity = '1';
                         item.style.transform = 'translateX(0)';
-                    }, 200 + (index * 100)); // Délai progressif
+                    }, 200 + (index * 100));
                 });
             }
             

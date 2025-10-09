@@ -510,10 +510,10 @@
                         <div class="details-panel">
                             <h4>Key Points :</h4>
                             <ul class="key-points">
-                                <li><span class="key-emoji">🎙️</span> Gilbert écoute, comprend et structure votre voix</li>
-                                <li><span class="key-emoji">📍</span> Fonctionne partout : réunion, déplacement, réflexion</li>
-                                <li><span class="key-emoji">🇫🇷</span> Entraîné spécifiquement pour le français</li>
-                                <li><span class="key-emoji">🤖</span> Assistant intelligent qui s'adapte à votre contexte</li>
+                                <li><span class="key-emoji"><i class="fas fa-microphone-alt"></i></span> Gilbert écoute, comprend et structure votre voix</li>
+                                <li><span class="key-emoji"><i class="fas fa-map-marker-alt"></i></span> Fonctionne partout : réunion, déplacement, réflexion</li>
+                                <li><span class="key-emoji"><i class="fas fa-flag"></i></span> Entraîné spécifiquement pour le français</li>
+                                <li><span class="key-emoji"><i class="fas fa-robot"></i></span> Assistant intelligent qui s'adapte à votre contexte</li>
                             </ul>
                             <p class="details-summary"><span class="summary-dot"></span> Un compagnon vocal qui vous suit partout et comprend vos besoins.</p>
                         </div>
@@ -530,10 +530,10 @@
                         <div class="details-panel">
                             <h4>Key Points :</h4>
                             <ul class="key-points">
-                                <li><span class="key-emoji">🧠</span> Comprend le contexte et les intentions derrière vos paroles</li>
-                                <li><span class="key-emoji">👥</span> Identifie automatiquement les rôles et les intervenants</li>
-                                <li><span class="key-emoji">🎯</span> Détecte les thèmes et les sujets principaux</li>
-                                <li><span class="key-emoji">📝</span> Structure intelligente selon le type de conversation</li>
+                                <li><span class="key-emoji"><i class="fas fa-brain"></i></span> Comprend le contexte et les intentions derrière vos paroles</li>
+                                <li><span class="key-emoji"><i class="fas fa-users"></i></span> Identifie automatiquement les rôles et les intervenants</li>
+                                <li><span class="key-emoji"><i class="fas fa-bullseye"></i></span> Détecte les thèmes et les sujets principaux</li>
+                                <li><span class="key-emoji"><i class="fas fa-file-alt"></i></span> Structure intelligente selon le type de conversation</li>
                             </ul>
                             <p class="details-summary"><span class="summary-dot"></span> Une transcription qui comprend le sens, pas seulement les mots.</p>
                         </div>
@@ -556,10 +556,10 @@
                         <div class="details-panel">
                             <h4>Key Points :</h4>
                             <ul class="key-points">
-                                <li><span class="key-emoji">📝</span> Notes structurées automatiquement à partir de votre voix</li>
-                                <li><span class="key-emoji">📊</span> Synthèses intelligentes selon le contexte</li>
-                                <li><span class="key-emoji">✅</span> Plans d'action générés automatiquement</li>
-                                <li><span class="key-emoji">⚡</span> Organisation instantanée de vos idées</li>
+                                <li><span class="key-emoji"><i class="fas fa-sticky-note"></i></span> Notes structurées automatiquement à partir de votre voix</li>
+                                <li><span class="key-emoji"><i class="fas fa-chart-bar"></i></span> Synthèses intelligentes selon le contexte</li>
+                                <li><span class="key-emoji"><i class="fas fa-check-circle"></i></span> Plans d'action générés automatiquement</li>
+                                <li><span class="key-emoji"><i class="fas fa-bolt"></i></span> Organisation instantanée de vos idées</li>
                             </ul>
                             <p class="details-summary"><span class="summary-dot"></span> Vos paroles deviennent des documents structurés et exploitables.</p>
                         </div>
@@ -990,9 +990,112 @@
     <script src="script.js"></script>
     <script src="dropdown.js"></script>
     
+    <style>
+        /* CSS de secours pour les panneaux de détails */
+        .details-panel {
+            background: #f8f9ff;
+            border-radius: 10px;
+            padding: 0;
+            margin-top: 10px;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(-5px);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid transparent;
+        }
+        
+        .details-panel.active {
+            padding: 20px;
+            max-height: 600px;
+            opacity: 1;
+            transform: translateY(0);
+            border: 1px solid rgba(57, 81, 198, 0.1);
+            margin-bottom: 20px;
+        }
+        
+        .details-panel h4 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            color: #2c3e8c;
+            font-weight: 700;
+            border-bottom: 2px solid rgba(57, 81, 198, 0.2);
+            padding-bottom: 8px;
+        }
+        
+        .details-panel .key-points {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .details-panel .key-points li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(57, 81, 198, 0.1);
+        }
+        
+        .details-panel .key-points li:last-child {
+            border-bottom: none;
+        }
+        
+        .details-panel .key-emoji {
+            font-size: 1.1rem;
+            margin-right: 12px;
+            width: 32px;
+            height: 32px;
+            text-align: center;
+            color: white;
+            background: linear-gradient(135deg, #5046e5 0%, #9c6eff 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .details-panel .key-emoji i {
+            font-size: 0.9rem;
+        }
+    </style>
+    
     <script>
         // Script pour la FAQ dynamique et interactive
         document.addEventListener('DOMContentLoaded', function() {
+            // Code de secours pour les boutons "En savoir plus"
+            console.log('Setting up expand buttons');
+            const expandButtons = document.querySelectorAll('.expand-details');
+            console.log('Found expand buttons:', expandButtons.length);
+            
+            expandButtons.forEach((button, index) => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    console.log('Button clicked:', index);
+                    const detailsPanel = this.nextElementSibling;
+                    
+                    if (detailsPanel) {
+                        const isExpanded = detailsPanel.classList.contains('active');
+                        console.log('Is expanded:', isExpanded);
+                        
+                        // Fermer tous les autres panneaux
+                        document.querySelectorAll('.details-panel.active').forEach(panel => {
+                            if (panel !== detailsPanel) {
+                                panel.classList.remove('active');
+                            }
+                        });
+                        
+                        if (isExpanded) {
+                            detailsPanel.classList.remove('active');
+                        } else {
+                            detailsPanel.classList.add('active');
+                        }
+                    }
+                });
+            });
+            
             const faqItems = document.querySelectorAll('.faq-item');
             
             // Animation d'entrée pour les éléments FAQ

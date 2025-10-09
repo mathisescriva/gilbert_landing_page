@@ -868,11 +868,12 @@ nav {
 }
 
 .details-panel.active {
-    padding: 15px;
-    max-height: 450px;
+    padding: 20px;
+    max-height: 600px;
     opacity: 1;
     transform: translateY(0);
     border: 1px solid rgba(57, 81, 198, 0.1);
+    margin-bottom: 20px;
 }
 
 /* Animation subtile des items de la liste */
