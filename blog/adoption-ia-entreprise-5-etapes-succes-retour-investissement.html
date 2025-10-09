@@ -219,6 +219,56 @@
             font-size: 1.1rem;
             margin-bottom: 0.2rem;
         }
+        
+        /* Animations au scroll */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .animate-on-scroll.animate-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .step-box {
+            transition: all 0.3s ease;
+        }
+        
+        .step-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .roi-box {
+            transition: all 0.3s ease;
+        }
+        
+        .roi-metric {
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        
+        .roi-box.animate-in .roi-metric {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .roi-box.animate-in .roi-metric:nth-child(1) { transition-delay: 0.1s; }
+        .roi-box.animate-in .roi-metric:nth-child(2) { transition-delay: 0.2s; }
+        .roi-box.animate-in .roi-metric:nth-child(3) { transition-delay: 0.3s; }
+        .roi-box.animate-in .roi-metric:nth-child(4) { transition-delay: 0.4s; }
+        
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
+        }
     </style>
 </head>
 <body>
@@ -233,10 +283,9 @@
             <div class="nav-links">
                 <a href="../index.html#features">Fonctionnalités</a>
                 <a href="../index.html#demo">Démonstration</a>
-                <a href="../index.html#testimonials">Témoignages</a>
                 <a href="../index.html#pricing">Tarifs</a>
                 <a href="../blog.html" class="active">Blog</a>
-                <a href="../ambassadeur.html" class="cta-button secondary">Devenir ambassadeur</a>
+                <a href="https://gilbert-assistant.ovh" class="cta-button secondary">Essayer Gilbert</a>
             </div>
             <div class="hamburger">
                 <span></span>
@@ -297,17 +346,17 @@
                 
                 <p>Pour garantir l'adhésion, associez dès le départ :</p>
                 
-                <div class="step-box">
+                <div class="step-box animate-on-scroll">
                     <h3><i class="fas fa-users" style="color: var(--primary); margin-right: 10px;"></i> Les managers</h3>
                     <p>Mettez en avant les gains de productivité et le temps libéré pour des tâches à plus forte valeur ajoutée. Les managers sont souvent les premiers bénéficiaires de l'automatisation des comptes rendus.</p>
                 </div>
                 
-                <div class="step-box">
+                <div class="step-box animate-on-scroll">
                     <h3><i class="fas fa-user-tie" style="color: var(--primary); margin-right: 10px;"></i> Les RH</h3>
                     <p>Présentez les avantages en termes de confort et clarté organisationnelle. Les équipes RH apprécieront particulièrement la traçabilité des décisions et la documentation automatique des entretiens.</p>
                 </div>
                 
-                <div class="step-box">
+                <div class="step-box animate-on-scroll">
                     <h3><i class="fas fa-server" style="color: var(--primary); margin-right: 10px;"></i> Les équipes IT ou DSI</h3>
                     <p>Rassurez sur les aspects sécurité, souveraineté des données et facilité d'intégration. Gilbert étant une solution française, elle répond aux exigences de conformité RGPD et de souveraineté numérique.</p>
                 </div>
@@ -320,7 +369,7 @@
                 
                 <p>Pas besoin d'un déploiement total dès le début. Choisissez un <strong>cas d'usage pilote</strong> :</p>
                 
-                <div class="roi-box">
+                <div class="roi-box animate-on-scroll">
                     <div class="roi-metric">
                         <div class="metric-icon"><i class="fas fa-microphone"></i></div>
                         <div class="metric-text">
@@ -377,17 +426,17 @@
                 
                 <p>Une fois le pilote validé :</p>
                 
-                <div class="step-box">
+                <div class="step-box animate-on-scroll">
                     <h3><span class="step-number">1</span> Déploiement multi-services</h3>
                     <p>Étendez l'utilisation de Gilbert à d'autres départements comme les RH, la Finance ou la Direction. Chaque service peut bénéficier d'une configuration adaptée à ses besoins spécifiques.</p>
                 </div>
                 
-                <div class="step-box">
+                <div class="step-box animate-on-scroll">
                     <h3><span class="step-number">2</span> Personnalisations métiers</h3>
                     <p>Activez les fonctionnalités de personnalisation pour adapter Gilbert à votre vocabulaire métier, à vos processus internes et à vos formats de documents.</p>
                 </div>
                 
-                <div class="step-box">
+                <div class="step-box animate-on-scroll">
                     <h3><span class="step-number">3</span> Intégration avec vos outils</h3>
                     <p>Connectez Gilbert à votre écosystème existant : email, CRM, Google Drive, Microsoft 365, outils de gestion de projet, etc.</p>
                 </div>
@@ -403,7 +452,7 @@
                 <p><strong>💡 Téléchargez notre guide de déploiement ou testez gratuitement Gilbert pendant 14 jours.</strong></p>
                 
                 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                    <a href="../index.html#tarifs" class="cta-button">Essayer Gilbert gratuitement</a>
+                    <a href="https://gilbert-assistant.ovh" class="cta-button">Essayer Gilbert gratuitement</a>
                     <a href="#" class="cta-button" style="background: white; color: var(--primary); border: 1px solid var(--primary);">Télécharger le guide de déploiement</a>
                 </div>
             </article>
@@ -463,5 +512,38 @@
             </div>
         </div>
     </footer>
+    
+    <script>
+        // Intersection Observer pour animer les éléments au scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-in');
+                        // Observer une seule fois
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            // Observer tous les éléments avec la classe animate-on-scroll
+            const animatedElements = document.querySelectorAll('.animate-on-scroll');
+            animatedElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            // Animation des titres h2 au scroll
+            const titles = document.querySelectorAll('.article-content h2');
+            titles.forEach(title => {
+                title.classList.add('animate-on-scroll');
+                observer.observe(title);
+            });
+        });
+    </script>
 </body>
 </html>

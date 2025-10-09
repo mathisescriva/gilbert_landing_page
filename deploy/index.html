@@ -12,6 +12,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* SUPPRESSION FORCÉE DES ANIMATIONS SUR LES CARTES DE FONCTIONNALITÉS */
+        .feature-card,
+        .feature-card *,
+        .feature-card:hover,
+        .feature-card:hover * {
+            transition: none !important;
+            animation: none !important;
+            transform: none !important;
+            will-change: auto !important;
+            transform-style: flat !important;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,10 +34,11 @@
             </div>
             <div class="nav-links">
                 <a href="#features">Fonctionnalités</a>
-                <a href="#demo">Démonstration</a>
-                <a href="#testimonials">Témoignages</a>
                 <a href="#pricing">Tarifs</a>
-                <button class="cta-button secondary">Connexion</button>
+                <a href="blog.html">Blog</a>
+            </div>
+            <div class="nav-cta">
+                <a href="https://gilbert-assistant.ovh" class="cta-button secondary">Essayer Gilbert</a>
             </div>
             <div class="hamburger">
                 <span></span>
@@ -238,7 +252,7 @@
                     <h2 class="section-title">Découvrez <img src="assets/images/img/logo_gilbert.png" alt="Gilbert" class="demo-logo"> en action</h2>
                     <p class="section-subtitle">Voyez comment Gilbert résume vos réunions, identifie les idées clés, et s'adapte à vos besoins. En 2 minutes.</p>
                     
-                    <div class="video-frame">
+                    <div class="video-frame" id="video-demo">
                         <div class="video-preview" id="video-preview">
                             <img src="assets/images/img/video-placeholder.jpg" alt="Démonstration Gilbert" class="video-img">
                             <button class="play-icon" id="play-button">
@@ -390,15 +404,14 @@
                 
                 <div class="pricing-grid">
                     <div class="pricing-card">
-                        <div class="beta-badge">Programme Bêta</div>
                         <div class="pricing-card-header">
                             <div class="pricing-icon startup">
                                 <span class="emoji-icon">🚀</span>
                             </div>
-                            <h3>Ambassadeur</h3>
+                            <h3>Standard</h3>
                         </div>
                         <div class="price">
-                            <span class="amount">50€</span>
+                            <span class="amount">19€</span>
                             <span class="period">/mois par utilisateur</span>
                             <span class="discount">-50% pendant 6 mois</span>
                         </div>
@@ -414,7 +427,7 @@
                             <li><span class="feature-emoji">🔮</span> Influence sur les futures fonctionnalités</li>
                         </ul>
                         
-                        <a href="#contact" class="cta-button primary full-width">Devenir Ambassadeur</a>
+                        <a href="https://gilbert-assistant.ovh" class="cta-button primary full-width">Essayer Gilbert</a>
                     </div>
                     
                     <div class="pricing-card featured">
@@ -472,7 +485,6 @@
                     <ul>
                         <li><a href="#home">Accueil</a></li>
                         <li><a href="#features">Fonctionnalités</a></li>
-                        <li><a href="#demo">Démonstration</a></li>
                         <li><a href="#pricing">Tarifs</a></li>
                     </ul>
                 </div>
@@ -503,7 +515,7 @@
         </div>
     </footer>
 
-    <script src="vanilla-tilt.js"></script>
+    <!-- vanilla-tilt.js supprimé -->
     <script src="script.js"></script>
     <script src="dropdown.js"></script>
 </body>
