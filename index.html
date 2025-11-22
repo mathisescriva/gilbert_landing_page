@@ -901,6 +901,266 @@
             </div>
         </section>
 
+        <!-- Team Section -->
+        <style>
+            .team-section {
+                background: linear-gradient(135deg, #f0f4ff 0%, #f8f9ff 100%);
+                padding: 100px 0;
+                position: relative;
+                overflow: hidden;
+            }
+            .team-section::before {
+                content: '';
+                position: absolute;
+                top: -100px;
+                right: -100px;
+                width: 300px;
+                height: 300px;
+                background: radial-gradient(circle, rgba(57, 81, 198, 0.08) 0%, transparent 70%);
+                border-radius: 50%;
+                z-index: 0;
+            }
+            .team-section::after {
+                content: '';
+                position: absolute;
+                bottom: -80px;
+                left: -80px;
+                width: 250px;
+                height: 250px;
+                background: radial-gradient(circle, rgba(100, 149, 237, 0.06) 0%, transparent 70%);
+                border-radius: 50%;
+                z-index: 0;
+            }
+            .team-section .container {
+                position: relative;
+                z-index: 2;
+                max-width: 1200px;
+            }
+            .team-card {
+                background: white;
+                border-radius: 24px;
+                padding: 0;
+                box-shadow: 0 20px 60px rgba(57, 81, 198, 0.12);
+                border: 1px solid rgba(57, 81, 198, 0.1);
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0;
+                overflow: hidden;
+                transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+                position: relative;
+            }
+            .team-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 6px;
+                height: 100%;
+                background: linear-gradient(135deg, #3951c6 0%, #4a63d2 50%, #6495ED 100%);
+                z-index: 1;
+            }
+            .team-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 25px 70px rgba(57, 81, 198, 0.18);
+            }
+            .team-image-wrapper {
+                position: relative;
+                overflow: hidden;
+                background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
+            }
+            .team-image-wrapper img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+                transition: transform 0.5s ease;
+            }
+            .team-card:hover .team-image-wrapper img {
+                transform: scale(1.05);
+            }
+            .team-content {
+                padding: 60px 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                position: relative;
+            }
+            .team-badge {
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
+                background: linear-gradient(135deg, rgba(57, 81, 198, 0.1) 0%, rgba(74, 99, 210, 0.1) 100%);
+                color: #3951c6;
+                padding: 10px 20px;
+                border-radius: 50px;
+                font-size: 0.95rem;
+                font-weight: 700;
+                margin-bottom: 25px;
+                border: 1px solid rgba(57, 81, 198, 0.15);
+                letter-spacing: 0.3px;
+                width: fit-content;
+            }
+            .team-badge i {
+                font-size: 1rem;
+                color: #4caf50;
+            }
+            .team-title {
+                font-size: 2.2rem;
+                font-weight: 800;
+                color: #2c3e8c;
+                margin: 0 0 20px 0;
+                line-height: 1.3;
+                letter-spacing: -0.5px;
+            }
+            .team-subtitle {
+                font-size: 1.2rem;
+                color: #555;
+                line-height: 1.7;
+                margin: 0 0 30px 0;
+                font-weight: 400;
+            }
+            .team-features {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+                margin-top: 20px;
+            }
+            .team-feature-item {
+                display: flex;
+                align-items: flex-start;
+                gap: 12px;
+                padding: 15px;
+                background: rgba(57, 81, 198, 0.04);
+                border-radius: 12px;
+                border-left: 3px solid #3951c6;
+                transition: all 0.3s ease;
+            }
+            .team-feature-item:hover {
+                background: rgba(57, 81, 198, 0.08);
+                transform: translateX(5px);
+            }
+            .team-feature-icon {
+                width: 40px;
+                height: 40px;
+                background: linear-gradient(135deg, #3951c6 0%, #4a63d2 100%);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 1.1rem;
+                flex-shrink: 0;
+                box-shadow: 0 4px 12px rgba(57, 81, 198, 0.2);
+            }
+            .team-feature-text {
+                flex: 1;
+            }
+            .team-feature-title {
+                font-size: 1rem;
+                font-weight: 700;
+                color: #2c3e8c;
+                margin: 0 0 5px 0;
+            }
+            .team-feature-desc {
+                font-size: 0.9rem;
+                color: #666;
+                line-height: 1.5;
+                margin: 0;
+            }
+            @media (max-width: 968px) {
+                .team-card {
+                    grid-template-columns: 1fr;
+                }
+                .team-image-wrapper {
+                    height: 400px;
+                }
+                .team-content {
+                    padding: 50px 40px;
+                }
+                .team-features {
+                    grid-template-columns: 1fr;
+                }
+            }
+            @media (max-width: 768px) {
+                .team-section {
+                    padding: 60px 0;
+                }
+                .team-card {
+                    border-radius: 20px;
+                }
+                .team-image-wrapper {
+                    height: 350px;
+                }
+                .team-content {
+                    padding: 40px 30px;
+                }
+                .team-title {
+                    font-size: 1.8rem;
+                }
+                .team-subtitle {
+                    font-size: 1.05rem;
+                }
+                .team-feature-item {
+                    padding: 12px;
+                }
+            }
+        </style>
+        <section class="team-section">
+            <div class="container">
+                <div class="team-card">
+                    <div class="team-image-wrapper">
+                        <img src="assets/images/equipe_gilbert.png" alt="Équipe Gilbert">
+                    </div>
+                    <div class="team-content">
+                        <div class="team-badge">
+                            <i class="fas fa-flag"></i>
+                            <span>100% Français</span>
+                        </div>
+                        <h2 class="team-title">Une équipe dévouée à votre sécurité</h2>
+                        <p class="team-subtitle">Derrière Gilbert, une équipe 100% française passionnée et engagée, qui place la sécurité et la souveraineté de vos données au cœur de chaque décision.</p>
+                        <div class="team-features">
+                            <div class="team-feature-item">
+                                <div class="team-feature-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="team-feature-text">
+                                    <h4 class="team-feature-title">Sécurité renforcée</h4>
+                                    <p class="team-feature-desc">Protection maximale de vos données avec des protocoles de sécurité de niveau entreprise</p>
+                                </div>
+                            </div>
+                            <div class="team-feature-item">
+                                <div class="team-feature-icon">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <div class="team-feature-text">
+                                    <h4 class="team-feature-title">Souveraineté garantie</h4>
+                                    <p class="team-feature-desc">Hébergement et traitement exclusivement en France, conformément au RGPD</p>
+                                </div>
+                            </div>
+                            <div class="team-feature-item">
+                                <div class="team-feature-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="team-feature-text">
+                                    <h4 class="team-feature-title">Dévouement total</h4>
+                                    <p class="team-feature-desc">Une équipe à l'écoute, disponible et engagée pour votre réussite</p>
+                                </div>
+                            </div>
+                            <div class="team-feature-item">
+                                <div class="team-feature-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="team-feature-text">
+                                    <h4 class="team-feature-title">Expertise française</h4>
+                                    <p class="team-feature-desc">Des talents français spécialisés en IA et en sécurité des données</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- OVH Logo Section -->
         <section class="ovh-logo-section">
             <div class="container">
