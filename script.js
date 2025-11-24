@@ -58,22 +58,62 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
+            e.stopPropagation();
+            
             const targetId = this.getAttribute('href');
+            
+            // Ignorer les liens vides ou juste #
+            if (!targetId || targetId === '#') {
+                return;
+            }
+            
             const targetElement = document.querySelector(targetId);
             
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-                
-                // Ajuster la position pour tenir compte du header fixe
+            if (!targetElement) {
+                console.warn('Target element not found:', targetId);
+                return;
+            }
+            
+            // Fermer le menu mobile si ouvert (avant le scroll)
+            const navLinks = document.querySelector('.nav-links');
+            const hamburger = document.querySelector('.hamburger');
+            const isMenuOpen = navLinks && navLinks.classList.contains('active');
+            
+            if (isMenuOpen) {
+                navLinks.classList.remove('active');
+                if (hamburger) hamburger.classList.remove('active');
+                // Petit délai pour laisser le menu se fermer avant de scroller
                 setTimeout(() => {
-                    window.scrollBy(0, -80);
+                    scrollToTarget(targetElement);
                 }, 100);
+            } else {
+                // Scroll immédiat si le menu n'est pas ouvert
+                scrollToTarget(targetElement);
             }
         });
     });
+    
+    // Fonction helper pour scroller vers une cible
+    function scrollToTarget(targetElement) {
+        // Calculer la position en tenant compte du header fixe
+        const headerHeight = 80; // Hauteur du header fixe
+        
+        // Obtenir la position absolue de l'élément
+        let elementTop = 0;
+        let element = targetElement;
+        while (element) {
+            elementTop += element.offsetTop;
+            element = element.offsetParent;
+        }
+        
+        const targetPosition = elementTop - headerHeight;
+        
+        // Scroll vers la position calculée
+        window.scrollTo({
+            top: Math.max(0, targetPosition),
+            behavior: 'smooth'
+        });
+    }
 
     // Mobile menu toggle
     const hamburger = document.querySelector('.hamburger');
