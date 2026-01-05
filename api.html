@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Gilbert - Documentation Développeur | L'IA française pour vos comptes rendus</title>
+    <meta name="description" content="Intégrez l'API Gilbert dans vos applications. Documentation complète pour développeurs avec exemples de code et endpoints.">
+    <link rel="icon" href="assets/images/img/icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/images/img/icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/img/logo_gilbert.png" alt="Logo Gilbert" class="main-logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#features">Fonctionnalités</a>
+                <a href="index.html#pricing">Tarifs</a>
+                <a href="blog.html">Blog</a>
+                <a href="api.html" class="active">API</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-cta">
+                <a href="https://gilbert-assistant.ovh" class="cta-button secondary">Essayer Gilbert</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- API Main Section -->
+        <section class="api-main">
+            <div class="api-main-container">
+                <div class="api-main-content">
+                    <div class="api-main-badge">
+                        <i class="fas fa-code"></i>
+                        <span>API REST</span>
+                    </div>
+                    <h2 class="api-main-title">Intégrez l'API <span class="api-main-logo">Gilbert</span> dans vos applications</h2>
+                    <p class="api-main-description">L'API Gilbert est disponible sur demande. Contactez-nous pour obtenir votre clé API et commencer à intégrer l'intelligence de Gilbert.</p>
+                    
+                    <div class="api-main-models">
+                        <p class="api-main-models-text">Vous avez également accès à nos modèles, notamment open source, sur <a href="https://huggingface.co/Gilbert-AI" target="_blank" rel="noopener noreferrer" class="api-main-hf-link">Hugging Face <i class="fas fa-external-link-alt"></i></a></p>
+                    </div>
+                    
+                    <div class="api-main-cta-wrapper">
+                        <a href="contact.html" class="api-main-cta">
+                            Demander l'accès
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="api-main-code">
+                    <div class="api-code-block">
+                        <div class="api-code-header">
+                            <div class="api-code-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="api-code-lang">bash</span>
+                        </div>
+                        <pre class="api-code-content"><code>curl -X POST https://api.gilbert.fr/v1/transcribe \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "audio_url": "https://example.com/audio.mp3",
+    "language": "fr"
+  }'</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- API Separator -->
+        <div class="api-separator">
+            <div class="api-separator-line"></div>
+        </div>
+
+        <!-- API Demo Section -->
+        <section class="api-demo">
+            <div class="api-demo-container">
+                <div class="api-demo-header">
+                    <h2 class="api-demo-title">Transcription en temps réel</h2>
+                    <p class="api-demo-subtitle">Exemple de transcription avec détection d'entités</p>
+                </div>
+                <div class="api-demo-box">
+                    <div class="api-demo-status">
+                        <span class="api-demo-status-dot"></span>
+                        <span class="api-demo-status-text">Transcription en cours...</span>
+                    </div>
+                    <div class="api-demo-content" id="streamingText">
+                        <span class="api-demo-word">Bonjour</span>
+                        <span class="api-demo-word entity-person">Mathis</span>
+                        <span class="api-demo-word">,</span>
+                        <span class="api-demo-word">nous</span>
+                        <span class="api-demo-word">sommes</span>
+                        <span class="api-demo-word">le</span>
+                        <span class="api-demo-word entity-date">15 janvier 2025</span>
+                        <span class="api-demo-word">et</span>
+                        <span class="api-demo-word">nous</span>
+                        <span class="api-demo-word">discutons</span>
+                        <span class="api-demo-word">du</span>
+                        <span class="api-demo-word entity-org">projet Gilbert</span>
+                        <span class="api-demo-word">.</span>
+                        <span class="api-demo-word">La</span>
+                        <span class="api-demo-word">réunion</span>
+                        <span class="api-demo-word">se</span>
+                        <span class="api-demo-word">déroule</span>
+                        <span class="api-demo-word">à</span>
+                        <span class="api-demo-word entity-location">Paris</span>
+                        <span class="api-demo-word">et</span>
+                        <span class="api-demo-word">nous</span>
+                        <span class="api-demo-word">avons</span>
+                        <span class="api-demo-word">plusieurs</span>
+                        <span class="api-demo-word">points</span>
+                        <span class="api-demo-word">à</span>
+                        <span class="api-demo-word">aborder</span>
+                        <span class="api-demo-word">.</span>
+                        <span class="api-demo-word">Premièrement</span>
+                        <span class="api-demo-word">,</span>
+                        <span class="api-demo-word">l'</span>
+                        <span class="api-demo-word entity-product">API Gilbert</span>
+                        <span class="api-demo-word">est</span>
+                        <span class="api-demo-word">maintenant</span>
+                        <span class="api-demo-word">disponible</span>
+                        <span class="api-demo-word">pour</span>
+                        <span class="api-demo-word">les</span>
+                        <span class="api-demo-word">développeurs</span>
+                        <span class="api-demo-word">.</span>
+                        <span class="api-demo-word">Deuxièmement</span>
+                        <span class="api-demo-word">,</span>
+                        <span class="api-demo-word">nous</span>
+                        <span class="api-demo-word">devons</span>
+                        <span class="api-demo-word">prévoir</span>
+                        <span class="api-demo-word">un</span>
+                        <span class="api-demo-word entity-date">déploiement pour mars 2025</span>
+                        <span class="api-demo-word">.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- API Documentation Section -->
+        <section class="api-docs">
+            <div class="api-docs-container">
+                <div class="api-docs-header">
+                    <h2 class="api-docs-title">Documentation des endpoints</h2>
+                    <p class="api-docs-subtitle">Découvrez les principaux endpoints disponibles via l'API Gilbert</p>
+                </div>
+
+                <div class="api-docs-list">
+                    <!-- Endpoint 1 -->
+                    <div class="api-doc-item">
+                        <div class="api-doc-header-item">
+                            <span class="api-doc-method post">POST</span>
+                            <span class="api-doc-path">/v1/transcribe</span>
+                        </div>
+                        <p class="api-doc-description">Transcrivez un fichier audio en texte structuré avec timestamps et locuteurs.</p>
+                        <div class="api-doc-tabs">
+                            <button class="api-doc-tab active" data-endpoint="transcribe" data-tab="request">Requête</button>
+                            <button class="api-doc-tab" data-endpoint="transcribe" data-tab="response">Réponse</button>
+                        </div>
+                        <div class="api-doc-code-wrapper">
+                            <div class="api-doc-code active" data-endpoint="transcribe" data-content="request">
+                                <div class="api-code-block">
+                                    <div class="api-code-header">
+                                        <div class="api-code-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <span class="api-code-lang">bash</span>
+                                        <button class="api-code-copy" title="Copier">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
+                                    <pre class="api-code-content"><code>curl -X POST https://api.gilbert.fr/v1/transcribe \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "audio_url": "https://example.com/audio.mp3",
+    "language": "fr",
+    "speaker_diarization": true
+  }'</code></pre>
+                                </div>
+                            </div>
+                            <div class="api-doc-code" data-endpoint="transcribe" data-content="response">
+                                <div class="api-code-block">
+                                    <div class="api-code-header">
+                                        <div class="api-code-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <span class="api-code-lang">json</span>
+                                        <button class="api-code-copy" title="Copier">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
+                                    <pre class="api-code-content"><code>{
+  "id": "trans_abc123",
+  "status": "completed",
+  "transcript": {
+    "text": "Bonjour, bienvenue à cette réunion...",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.5,
+        "speaker": "speaker_1",
+        "text": "Bonjour, bienvenue à cette réunion"
+      }
+    ]
+  },
+  "created_at": "2025-01-15T10:30:00Z"
+}</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Endpoint 2 -->
+                    <div class="api-doc-item">
+                        <div class="api-doc-header-item">
+                            <span class="api-doc-method post">POST</span>
+                            <span class="api-doc-path">/v1/summarize</span>
+                        </div>
+                        <p class="api-doc-description">Générez un résumé intelligent d'une transcription ou d'un texte.</p>
+                        <div class="api-doc-tabs">
+                            <button class="api-doc-tab active" data-endpoint="summarize" data-tab="request">Requête</button>
+                            <button class="api-doc-tab" data-endpoint="summarize" data-tab="response">Réponse</button>
+                        </div>
+                        <div class="api-doc-code-wrapper">
+                            <div class="api-doc-code active" data-endpoint="summarize" data-content="request">
+                                <div class="api-code-block">
+                                    <div class="api-code-header">
+                                        <div class="api-code-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <span class="api-code-lang">bash</span>
+                                        <button class="api-code-copy" title="Copier">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
+                                    <pre class="api-code-content"><code>curl -X POST https://api.gilbert.fr/v1/summarize \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "text": "Texte à résumer...",
+    "max_length": 500,
+    "style": "executive"
+  }'</code></pre>
+                                </div>
+                            </div>
+                            <div class="api-doc-code" data-endpoint="summarize" data-content="response">
+                                <div class="api-code-block">
+                                    <div class="api-code-header">
+                                        <div class="api-code-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <span class="api-code-lang">json</span>
+                                        <button class="api-code-copy" title="Copier">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
+                                    <pre class="api-code-content"><code>{
+  "id": "sum_xyz789",
+  "summary": "Résumé exécutif de la réunion...",
+  "key_points": [
+    "Point important 1",
+    "Point important 2"
+  ],
+  "created_at": "2025-01-15T10:35:00Z"
+}</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Endpoint 3 -->
+                    <div class="api-doc-item">
+                        <div class="api-doc-header-item">
+                            <span class="api-doc-method post">POST</span>
+                            <span class="api-doc-path">/v1/actions</span>
+                        </div>
+                        <p class="api-doc-description">Extrayez automatiquement les actions et décisions d'une réunion.</p>
+                        <div class="api-doc-tabs">
+                            <button class="api-doc-tab active" data-endpoint="actions" data-tab="request">Requête</button>
+                            <button class="api-doc-tab" data-endpoint="actions" data-tab="response">Réponse</button>
+                        </div>
+                        <div class="api-doc-code-wrapper">
+                            <div class="api-doc-code active" data-endpoint="actions" data-content="request">
+                                <div class="api-code-block">
+                                    <div class="api-code-header">
+                                        <div class="api-code-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <span class="api-code-lang">bash</span>
+                                        <button class="api-code-copy" title="Copier">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
+                                    <pre class="api-code-content"><code>curl -X POST https://api.gilbert.fr/v1/actions \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "transcript_id": "trans_abc123",
+    "extract_decisions": true,
+    "extract_tasks": true
+  }'</code></pre>
+                                </div>
+                            </div>
+                            <div class="api-doc-code" data-endpoint="actions" data-content="response">
+                                <div class="api-code-block">
+                                    <div class="api-code-header">
+                                        <div class="api-code-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <span class="api-code-lang">json</span>
+                                        <button class="api-code-copy" title="Copier">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
+                                    <pre class="api-code-content"><code>{
+  "id": "act_def456",
+  "decisions": [
+    {
+      "text": "Décision prise lors de la réunion",
+      "context": "Contexte de la décision"
+    }
+  ],
+  "tasks": [
+    {
+      "description": "Tâche à réaliser",
+      "assignee": "Personne assignée",
+      "priority": "high"
+    }
+  ],
+  "created_at": "2025-01-15T10:40:00Z"
+}</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- API Use Cases Section -->
+        <section class="api-usecases">
+            <div class="api-usecases-container">
+                <div class="api-usecases-header">
+                    <h2 class="api-usecases-title">Cas d'usage</h2>
+                    <p class="api-usecases-subtitle">Découvrez comment l'API Gilbert est utilisée dans le monde réel</p>
+                </div>
+
+                <div class="api-usecase-wrapper">
+                    <div class="api-usecase-preview">
+                        <img src="https://img.youtube.com/vi/oLa7GZZN_GU/maxresdefault.jpg" alt="MILO - L'assistant pédagogique" class="api-usecase-image">
+                    </div>
+                    <div class="api-usecase-content">
+                        <div class="api-usecase-badge">Éducation</div>
+                        <h3 class="api-usecase-title">MILO - L'assistant pédagogique</h3>
+                        <p class="api-usecase-description">MILO est le premier robot étudiant alimenté par l'API Gilbert. Présent aux cours, il peut résumer les leçons en temps réel et enregistrer tous les échanges entre professeurs et étudiants pour créer une mémoire pédagogique complète.</p>
+                        <a href="https://www.tf1.fr/lci/bonjour-la-matinale-tf1/videos/cest-deja-a-la-une-milo-le-premier-robot-etudiant-03010251.html" target="_blank" rel="noopener noreferrer" class="api-usecase-link">
+                            Voir le reportage TF1 <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- API FAQ Section -->
+        <section class="api-faq">
+            <div class="api-faq-container">
+                <div class="api-faq-header">
+                    <h2 class="api-faq-title">Questions fréquentes</h2>
+                    <p class="api-faq-subtitle">Tout ce que vous devez savoir sur l'API Gilbert</p>
+                </div>
+
+                <div class="api-faq-list">
+                    <div class="api-faq-item">
+                        <button class="api-faq-question">
+                            <span>Comment obtenir l'accès à l'API ?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="api-faq-answer">
+                            <p>L'API Gilbert est actuellement disponible sur demande. Contactez-nous via le formulaire de contact en précisant votre projet et vos besoins. Notre équipe vous répondra dans les plus brefs délais pour discuter de votre intégration.</p>
+                        </div>
+                    </div>
+
+                    <div class="api-faq-item">
+                        <button class="api-faq-question">
+                            <span>Quels sont les formats de fichiers audio supportés ?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="api-faq-answer">
+                            <p>L'API Gilbert supporte les principaux formats audio : MP3, WAV, FLAC, M4A, OGG. Les fichiers peuvent être fournis via une URL ou uploadés directement selon votre plan d'accès.</p>
+                        </div>
+                    </div>
+
+                    <div class="api-faq-item">
+                        <button class="api-faq-question">
+                            <span>Quelles sont les limites de l'API ?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="api-faq-answer">
+                            <p>Les limites dépendent de votre plan d'accès. Pour les plans Enterprise, nous proposons des quotas personnalisés adaptés à vos besoins. Contactez-nous pour discuter de vos volumes et obtenir un plan sur mesure.</p>
+                        </div>
+                    </div>
+
+                    <div class="api-faq-item">
+                        <button class="api-faq-question">
+                            <span>L'API est-elle conforme RGPD ?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="api-faq-answer">
+                            <p>Oui, l'API Gilbert est entièrement conforme au RGPD. Toutes les données sont hébergées en France et traitées selon les normes de sécurité les plus strictes. Nous garantissons la souveraineté de vos données.</p>
+                        </div>
+                    </div>
+
+                    <div class="api-faq-item">
+                        <button class="api-faq-question">
+                            <span>Existe-t-il des SDK ou bibliothèques pour intégrer l'API ?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="api-faq-answer">
+                            <p>L'API est une API REST standard qui peut être intégrée avec n'importe quel langage de programmation. Des exemples de code sont disponibles dans notre documentation. Pour les besoins spécifiques, notre équipe peut vous accompagner dans l'intégration.</p>
+                        </div>
+                    </div>
+
+                    <div class="api-faq-item">
+                        <button class="api-faq-question">
+                            <span>Quel est le temps de réponse moyen de l'API ?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="api-faq-answer">
+                            <p>Le temps de réponse dépend de la longueur du fichier audio. Pour un fichier de 10 minutes, la transcription est généralement disponible en moins de 2 minutes. Les plans Enterprise bénéficient de priorités de traitement pour des temps de réponse encore plus rapides.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="assets/images/img/logo_gilbert.png" alt="Logo Gilbert" class="footer-logo">
+                    <p>Gilbert est un assistant vocal souverain qui transforme votre voix en intelligence. De la parole à l'intelligence. En toute simplicité.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.html#features">Fonctionnalités</a></li>
+                        <li><a href="index.html#pricing">Tarifs</a></li>
+                        <li><a href="api.html">API</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="conditions-utilisation.html">Conditions d'utilisation</a></li>
+                        <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> 07 50 94 75 43</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/company/lexiapro/?viewAsMember=true" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gilbert. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="api.js"></script>
+    <script src="api-demo.js"></script>
+    <script src="api-faq.js"></script>
+</body>
+</html>
+
