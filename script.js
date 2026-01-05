@@ -211,6 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Fonction pour mettre à jour l'affichage du slider
     function updateSlider() {
+        if (!testimonialSlider) return; // Vérifier que l'élément existe
         // Déplacer le slider à la position actuelle
         testimonialSlider.style.transform = `translateX(-${currentSlide * 100}%)`;
         
@@ -248,8 +249,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    // Initialiser le slider
-    updateSlider();
+    // Initialiser le slider seulement si l'élément existe
+    if (testimonialSlider) {
+        updateSlider();
+    }
 
 });
 

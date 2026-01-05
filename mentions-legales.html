@@ -72,6 +72,84 @@
         .logo img {
             filter: brightness(0) invert(1);
         }
+        
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .legal-header {
+                padding: 120px 0 40px;
+            }
+            
+            .legal-header h1 {
+                font-size: 2rem;
+                padding: 0 20px;
+            }
+            
+            .legal-content {
+                padding: 40px 15px;
+            }
+            
+            .legal-content h1 {
+                font-size: 1.8rem;
+                margin-bottom: 20px;
+            }
+            
+            .legal-content h2 {
+                font-size: 1.5rem;
+                margin-top: 30px;
+                margin-bottom: 15px;
+            }
+            
+            .legal-content h3 {
+                font-size: 1.2rem;
+                margin-top: 25px;
+                margin-bottom: 12px;
+            }
+            
+            .legal-content h4 {
+                font-size: 1.1rem;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+            
+            .legal-content p, .legal-content ul, .legal-content ol {
+                margin-bottom: 15px;
+                line-height: 1.6;
+            }
+            
+            .legal-content ul, .legal-content ol {
+                padding-left: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .legal-header {
+                padding: 100px 0 30px;
+            }
+            
+            .legal-header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .legal-content {
+                padding: 30px 10px;
+            }
+            
+            .legal-content h1 {
+                font-size: 1.5rem;
+            }
+            
+            .legal-content h2 {
+                font-size: 1.3rem;
+            }
+            
+            .legal-content h3 {
+                font-size: 1.1rem;
+            }
+            
+            .legal-content h4 {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>

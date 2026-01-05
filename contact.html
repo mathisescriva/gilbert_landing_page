@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Gilbert | L'IA française pour vos comptes rendus de réunions</title>
+    <meta name="description" content="Contactez l'équipe Gilbert pour découvrir comment notre IA française peut transformer vos réunions. Nous sommes là pour répondre à toutes vos questions.">
+    <link rel="icon" href="assets/images/img/icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/images/img/icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/img/logo_gilbert.png" alt="Logo Gilbert" class="main-logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#features">Fonctionnalités</a>
+                <a href="index.html#pricing">Tarifs</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+            <div class="nav-cta">
+                <a href="https://gilbert-assistant.ovh" class="cta-button secondary">Essayer Gilbert</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contact Hero Section -->
+        <section class="contact-hero">
+            <div class="animated-bg-element" style="position: absolute; top: 15%; left: 10%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(100, 149, 237, 0.6) 0%, rgba(65, 105, 225, 0.3) 50%, transparent 70%); border-radius: 50%; z-index: 2; animation: float1 20s ease-in-out infinite alternate;"></div>
+            <div class="animated-bg-element" style="position: absolute; bottom: 20%; right: 5%; width: 350px; height: 350px; background: radial-gradient(circle, rgba(100, 149, 237, 0.5) 0%, rgba(65, 105, 225, 0.25) 50%, transparent 70%); border-radius: 50%; z-index: 2; animation: float2 15s ease-in-out infinite alternate;"></div>
+            
+            <style>
+                @keyframes float1 {
+                    0% { transform: translate(0, 0) scale(1); opacity: 0.7; }
+                    50% { transform: translate(50px, -40px) scale(1.2); opacity: 0.8; }
+                    100% { transform: translate(-40px, 60px) scale(0.9); opacity: 0.6; }
+                }
+                @keyframes float2 {
+                    0% { transform: translate(0, 0) scale(1); opacity: 0.6; }
+                    50% { transform: translate(-60px, 40px) scale(1.25); opacity: 0.7; }
+                    100% { transform: translate(50px, -50px) scale(0.95); opacity: 0.5; }
+                }
+            </style>
+            
+            <div class="container">
+                <div class="contact-hero-content">
+                    <div class="badge">📧 CONTACTEZ-NOUS</div>
+                    <h1>Parlons de vos <span class="highlight">besoins</span></h1>
+                    <p class="contact-hero-subtitle">Notre équipe est là pour répondre à toutes vos questions et vous accompagner dans votre projet. Discutons de la façon dont Gilbert peut transformer vos réunions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Content Section -->
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <div class="contact-form-card">
+                            <h2>Envoyez-nous un message</h2>
+                            <p class="contact-form-intro">Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+                            
+                            <form id="contactForm" class="contact-form">
+                                <div class="form-group">
+                                    <label for="name">Nom complet <span class="required">*</span></label>
+                                    <input type="text" id="name" name="name" required placeholder="Votre nom">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" required placeholder="votre.email@exemple.fr">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="company">Entreprise</label>
+                                    <input type="text" id="company" name="company" placeholder="Nom de votre entreprise">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone">Téléphone</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">Sujet <span class="required">*</span></label>
+                                    <select id="subject" name="subject" required>
+                                        <option value="">Sélectionnez un sujet</option>
+                                        <option value="demo">Demande de démonstration</option>
+                                        <option value="pricing">Question sur les tarifs</option>
+                                        <option value="technical">Question technique</option>
+                                        <option value="partnership">Partenariat</option>
+                                        <option value="other">Autre</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Message <span class="required">*</span></label>
+                                    <textarea id="message" name="message" rows="6" required placeholder="Décrivez votre demande ou votre question..."></textarea>
+                                </div>
+                                
+                                <div class="form-group checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="privacy" required>
+                                        <span>J'accepte que mes données soient utilisées pour me recontacter (conformément à la <a href="politique-confidentialite.html" target="_blank">politique de confidentialité</a>) <span class="required">*</span></span>
+                                    </label>
+                                </div>
+                                
+                                <button type="submit" class="cta-button primary contact-submit">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Envoyer le message
+                                </button>
+                                
+                                <div id="formMessage" class="form-message"></div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="contact-info-wrapper">
+                        <div class="contact-info-card">
+                            <h2>Autres moyens de nous joindre</h2>
+                            <p class="contact-info-intro">Préférez-vous nous appeler ou nous écrire directement ? Voici toutes nos coordonnées.</p>
+                            
+                            <div class="contact-info-list">
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact-info-content">
+                                        <h3>Téléphone</h3>
+                                        <p><a href="tel:+33750947543">07 50 94 75 43</a></p>
+                                        <span class="contact-info-note">Lun-Ven, 9h-18h</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-info-content">
+                                        <h3>Email</h3>
+                                        <p><a href="mailto:contact@lexiapro.fr">contact@lexiapro.fr</a></p>
+                                        <span class="contact-info-note">Réponse sous 24-48h</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-info-content">
+                                        <h3>Adresse</h3>
+                                        <p>MAISON DE LA TECHNOPOLE<br>6 rue Léonard de Vinci<br>53810 Changé, France</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-social">
+                                <h3>Suivez-nous</h3>
+                                <div class="contact-social-buttons">
+                                    <a href="https://www.linkedin.com/company/lexiapro/?viewAsMember=true" target="_blank" rel="noopener" class="social-button linkedin">
+                                        <i class="fab fa-linkedin"></i>
+                                        LinkedIn
+                                    </a>
+                                    <a href="https://www.youtube.com/@Lexia-pro" target="_blank" rel="noopener" class="social-button youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-trust">
+                                <div class="trust-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>100% Souverain</span>
+                                </div>
+                                <div class="trust-item">
+                                    <i class="fas fa-lock"></i>
+                                    <span>RGPD Compliant</span>
+                                </div>
+                                <div class="trust-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Réponse rapide</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="assets/images/img/logo_gilbert.png" alt="Logo Gilbert" class="footer-logo">
+                    <p>Gilbert est un assistant vocal souverain qui transforme votre voix en intelligence. De la parole à l'intelligence. En toute simplicité.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.html#features">Fonctionnalités</a></li>
+                        <li><a href="index.html#pricing">Tarifs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="conditions-utilisation.html">Conditions d'utilisation</a></li>
+                        <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> 07 50 94 75 43</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/company/lexiapro/?viewAsMember=true" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gilbert. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contact-form.js"></script>
+</body>
+</html>
+
