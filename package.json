@@ -1,0 +1,24 @@
+{
+  "name": "gilbert-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page professionnelle pour Gilbert, une application SaaS souveraine française d'intelligence artificielle spécialisée dans les comptes rendus de réunions.",
+  "main": "active-section.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathisescriva/gilbert_landing_page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mathisescriva/gilbert_landing_page/issues"
+  },
+  "homepage": "https://github.com/mathisescriva/gilbert_landing_page#readme",
+  "dependencies": {
+    "puppeteer": "^24.37.3"
+  }
+}

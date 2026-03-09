@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+Disallow: /deploy/
+Disallow: /screenshots/
+Disallow: /screenshots-3002/
+Disallow: /screenshots-animation/
+Disallow: /screenshots-detailed/
+Disallow: /screenshots-flow/
+Disallow: /screenshots-focused/
+Disallow: /screenshots-verify/
+
+Sitemap: https://www.gilbert-assistant.fr/sitemap.xml

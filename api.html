@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Gilbert - Documentation Développeur | L'IA française pour vos comptes rendus</title>
-    <meta name="description" content="Intégrez l'API Gilbert dans vos applications. Documentation complète pour développeurs avec exemples de code et endpoints.">
+    <title>API Gilbert - Transcription & résumé IA en français | Documentation développeur</title>
+    <meta name="description" content="Intégrez l'API Gilbert pour la transcription audio, le résumé intelligent et l'extraction d'actions. API REST française, conforme RGPD, hébergée en France. Documentation complète avec exemples.">
+    <meta name="keywords" content="API transcription française, API résumé réunion, API IA française, transcription audio API, speech-to-text français, API RGPD, développeur IA France">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Lexiapro">
+    <link rel="canonical" href="https://www.gilbert-assistant.fr/api.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="API Gilbert - Transcription & résumé IA en français pour développeurs">
+    <meta property="og:description" content="Intégrez l'API Gilbert : transcription audio, résumé intelligent, extraction d'actions. API REST souveraine, conforme RGPD.">
+    <meta property="og:url" content="https://www.gilbert-assistant.fr/api.html">
+    <meta property="og:site_name" content="Gilbert">
+    <meta property="og:image" content="https://www.gilbert-assistant.fr/assets/images/img/logo_gilbert.png">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="API Gilbert - Transcription & résumé IA en français">
+    <meta name="twitter:description" content="API REST française pour la transcription audio et le résumé intelligent de réunions. Conforme RGPD.">
+    <meta name="twitter:image" content="https://www.gilbert-assistant.fr/assets/images/img/logo_gilbert.png">
+
     <link rel="icon" href="assets/images/img/icon.png" type="image/png">
     <link rel="apple-touch-icon" href="assets/images/img/icon.png">
     <link rel="stylesheet" href="styles.css">
@@ -376,7 +396,7 @@
 
                 <div class="api-usecase-wrapper">
                     <div class="api-usecase-preview">
-                        <img src="https://img.youtube.com/vi/oLa7GZZN_GU/maxresdefault.jpg" alt="MILO - L'assistant pédagogique" class="api-usecase-image">
+                        <img src="https://img.youtube.com/vi/oLa7GZZN_GU/maxresdefault.jpg" alt="MILO - L'assistant pédagogique" class="api-usecase-image" loading="lazy">
                     </div>
                     <div class="api-usecase-content">
                         <div class="api-usecase-badge">Éducation</div>
@@ -468,7 +488,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <img src="assets/images/img/logo_gilbert.png" alt="Logo Gilbert" class="footer-logo">
+                    <img src="assets/images/img/logo_gilbert.png" alt="Logo Gilbert" class="footer-logo" loading="lazy">
                     <p>Gilbert est un assistant vocal souverain qui transforme votre voix en intelligence. De la parole à l'intelligence. En toute simplicité.</p>
                 </div>
                 
@@ -479,6 +499,9 @@
                         <li><a href="index.html#features">Fonctionnalités</a></li>
                         <li><a href="index.html#pricing">Tarifs</a></li>
                         <li><a href="api.html">API</a></li>
+                        <li><a href="comparatif-logiciel-compte-rendu-reunion.html">Comparatif</a></li>
+                        <li><a href="cas-usage-ia-reunion.html">Cas d'usage</a></li>
+                        <li><a href="glossaire-ia-reunion.html">Glossaire IA</a></li>
                     </ul>
                 </div>
                 
@@ -510,6 +533,72 @@
     <script src="api.js"></script>
     <script src="api-demo.js"></script>
     <script src="api-faq.js"></script>
+
+    <!-- Données structurées JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Comment obtenir l'accès à l'API Gilbert ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "L'API Gilbert est actuellement disponible sur demande. Contactez-nous via le formulaire de contact en précisant votre projet et vos besoins. Notre équipe vous répondra dans les plus brefs délais pour discuter de votre intégration."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Quels sont les formats de fichiers audio supportés par l'API Gilbert ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "L'API Gilbert supporte les principaux formats audio : MP3, WAV, FLAC, M4A, OGG. Les fichiers peuvent être fournis via une URL ou uploadés directement selon votre plan d'accès."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Quelles sont les limites de l'API Gilbert ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Les limites dépendent de votre plan d'accès. Pour les plans Enterprise, nous proposons des quotas personnalisés adaptés à vos besoins. Contactez-nous pour discuter de vos volumes et obtenir un plan sur mesure."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "L'API Gilbert est-elle conforme RGPD ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui, l'API Gilbert est entièrement conforme au RGPD. Toutes les données sont hébergées en France et traitées selon les normes de sécurité les plus strictes. Nous garantissons la souveraineté de vos données."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Quel est le temps de réponse moyen de l'API Gilbert ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le temps de réponse dépend de la longueur du fichier audio. Pour un fichier de 10 minutes, la transcription est généralement disponible en moins de 2 minutes. Les plans Enterprise bénéficient de priorités de traitement pour des temps de réponse encore plus rapides."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebAPI",
+        "name": "API Gilbert",
+        "description": "API REST française pour la transcription audio, le résumé intelligent et l'extraction d'actions de réunions. Conforme RGPD, hébergée en France.",
+        "url": "https://www.gilbert-assistant.fr/api.html",
+        "provider": {
+            "@type": "Organization",
+            "name": "Lexiapro",
+            "url": "https://www.gilbert-assistant.fr"
+        },
+        "documentation": "https://www.gilbert-assistant.fr/api.html"
+    }
+    </script>
 </body>
 </html>
 

@@ -52,6 +52,13 @@ jspm_packages/
 # Mac files
 .DS_Store
 
+# Screenshots (dev tools)
+screenshots/
+screenshots-*/
+screenshot-*.js
+find-flow.js
+schema_fonctionement.png
+
 # Netlify files
 .netlify
 

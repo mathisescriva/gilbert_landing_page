@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossaire IA et réunion - Définitions essentielles | Gilbert</title>
+    <meta name="description" content="Glossaire complet des termes liés à l'IA, la transcription de réunion et les comptes rendus automatiques. Définitions claires de : compte rendu, PV de réunion, transcription, IA souveraine, RGPD, diarisation et plus.">
+    <meta name="keywords" content="définition compte rendu réunion, qu'est-ce qu'une IA souveraine, transcription automatique définition, PV réunion définition, glossaire IA, speech to text français">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Lexiapro">
+    <link rel="canonical" href="https://www.gilbert-assistant.fr/glossaire-ia-reunion.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Glossaire IA et réunion - Toutes les définitions">
+    <meta property="og:description" content="Glossaire complet des termes liés à l'IA, la transcription et les comptes rendus automatiques de réunion.">
+    <meta property="og:url" content="https://www.gilbert-assistant.fr/glossaire-ia-reunion.html">
+    <meta property="og:site_name" content="Gilbert">
+    <meta property="og:image" content="https://www.gilbert-assistant.fr/assets/images/img/logo_gilbert.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Glossaire IA et réunion">
+    <meta name="twitter:description" content="Toutes les définitions essentielles sur l'IA et les réunions.">
+    <meta name="twitter:image" content="https://www.gilbert-assistant.fr/assets/images/img/logo_gilbert.png">
+    <link rel="icon" href="assets/images/img/icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/images/img/icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        .glossaire-hero {
+            padding: 120px 0 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #5046e5 0%, #9c6eff 100%);
+            color: #fff;
+        }
+        .glossaire-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.05);
+        }
+        .glossaire-hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.04);
+        }
+        .glossaire-hero .container {
+            position: relative;
+            z-index: 1;
+        }
+        .glossaire-hero-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 50px;
+            padding: 8px 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .glossaire-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 16px;
+            line-height: 1.15;
+        }
+        .glossaire-hero h1 span {
+            background: linear-gradient(90deg, #ffd166, #ffb347);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glossaire-hero p {
+            font-size: 1.15rem;
+            max-width: 680px;
+            margin: 0 auto;
+            opacity: 0.92;
+            line-height: 1.7;
+        }
+
+        .alphabet-nav {
+            background: #fff;
+            border-bottom: 1px solid #e8e5ff;
+            padding: 14px 0;
+            position: sticky;
+            top: 70px;
+            z-index: 90;
+            box-shadow: 0 2px 12px rgba(80,70,229,0.06);
+        }
+        .alphabet-nav .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px;
+        }
+        .alphabet-nav a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: #5046e5;
+            background: #f4f2ff;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+        .alphabet-nav a:hover,
+        .alphabet-nav a:focus {
+            background: #5046e5;
+            color: #fff;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(80,70,229,0.25);
+        }
+        .alphabet-nav a.disabled {
+            color: #c5c0e0;
+            background: #faf9ff;
+            pointer-events: none;
+            cursor: default;
+        }
+
+        .glossaire-content {
+            padding: 50px 0 80px;
+        }
+        .glossaire-intro {
+            max-width: 820px;
+            margin: 0 auto 50px;
+            text-align: center;
+            font-size: 1.05rem;
+            color: #555;
+            line-height: 1.75;
+        }
+        .glossaire-intro strong {
+            color: #5046e5;
+        }
+
+        .letter-section {
+            margin-bottom: 40px;
+        }
+        .letter-heading {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }
+        .letter-heading .letter {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 52px;
+            height: 52px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #5046e5 0%, #9c6eff 100%);
+            color: #fff;
+            font-size: 1.6rem;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+        .letter-heading hr {
+            flex: 1;
+            border: none;
+            height: 2px;
+            background: linear-gradient(90deg, #e8e5ff, transparent);
+        }
+
+        .glossaire-card {
+            background: #fff;
+            border: 1px solid #eee8ff;
+            border-radius: 14px;
+            padding: 30px 32px;
+            margin-bottom: 18px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .glossaire-card:hover {
+            border-color: #d0caff;
+            box-shadow: 0 8px 30px rgba(80,70,229,0.08);
+            transform: translateY(-2px);
+        }
+        .glossaire-card h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .glossaire-card h2 .term-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 34px;
+            height: 34px;
+            border-radius: 8px;
+            background: #f4f2ff;
+            color: #5046e5;
+            font-size: 0.95rem;
+            flex-shrink: 0;
+        }
+        .glossaire-card .term-en {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #9c6eff;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        .glossaire-card p {
+            color: #4a4a5a;
+            font-size: 1rem;
+            line-height: 1.75;
+            margin-bottom: 0;
+        }
+        .glossaire-card .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 12px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #5046e5;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .glossaire-card .read-more:hover {
+            color: #3a32b0;
+            gap: 10px;
+        }
+        .glossaire-card .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 14px;
+        }
+        .glossaire-card .tag {
+            display: inline-block;
+            background: #f4f2ff;
+            color: #5046e5;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.78rem;
+            font-weight: 600;
+        }
+
+        .glossaire-cta {
+            text-align: center;
+            padding: 60px 0 0;
+            margin-top: 20px;
+        }
+        .glossaire-cta h2 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #1a1a2e;
+            margin-bottom: 14px;
+        }
+        .glossaire-cta p {
+            color: #666;
+            font-size: 1.05rem;
+            margin-bottom: 24px;
+            max-width: 560px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .glossaire-cta .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #5046e5, #9c6eff);
+            color: #fff;
+            padding: 14px 36px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(80,70,229,0.3);
+        }
+        .glossaire-cta .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(80,70,229,0.4);
+        }
+
+        @media (max-width: 768px) {
+            .glossaire-hero { padding: 100px 0 40px; }
+            .glossaire-hero h1 { font-size: 1.9rem; }
+            .glossaire-hero p { font-size: 1rem; }
+            .alphabet-nav a { width: 32px; height: 32px; font-size: 0.8rem; }
+            .glossaire-card { padding: 22px 20px; }
+            .glossaire-card h2 { font-size: 1.15rem; }
+            .letter-heading .letter { width: 42px; height: 42px; font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html"><img src="assets/images/img/logo_gilbert.png" alt="Logo Gilbert" class="main-logo"></a></div>
+            <div class="nav-links">
+                <a href="index.html#features">Fonctionnalités</a>
+                <a href="index.html#pricing">Tarifs</a>
+                <a href="blog.html">Blog</a>
+                <a href="api.html">API</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-cta"><a href="https://gilbert-assistant.ovh" class="cta-button secondary">Essayer Gilbert</a></div>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="glossaire-hero">
+            <div class="container">
+                <div class="glossaire-hero-badge">📖 Glossaire</div>
+                <h1>Glossaire de l'IA et des <span>réunions</span></h1>
+                <p>Retrouvez toutes les définitions essentielles pour comprendre l'intelligence artificielle appliquée aux réunions, à la transcription et aux comptes rendus automatiques.</p>
+            </div>
+        </section>
+
+        <nav class="alphabet-nav" aria-label="Navigation alphabétique">
+            <div class="container">
+                <a href="#lettre-A">A</a>
+                <a href="#" class="disabled">B</a>
+                <a href="#lettre-C">C</a>
+                <a href="#lettre-D">D</a>
+                <a href="#lettre-E">E</a>
+                <a href="#" class="disabled">F</a>
+                <a href="#" class="disabled">G</a>
+                <a href="#lettre-H">H</a>
+                <a href="#lettre-I">I</a>
+                <a href="#" class="disabled">J</a>
+                <a href="#" class="disabled">K</a>
+                <a href="#" class="disabled">L</a>
+                <a href="#lettre-M">M</a>
+                <a href="#lettre-N">N</a>
+                <a href="#lettre-O">O</a>
+                <a href="#lettre-P">P</a>
+                <a href="#" class="disabled">Q</a>
+                <a href="#lettre-R">R</a>
+                <a href="#lettre-S">S</a>
+                <a href="#lettre-T">T</a>
+                <a href="#" class="disabled">U</a>
+                <a href="#lettre-V">V</a>
+                <a href="#lettre-W">W</a>
+                <a href="#" class="disabled">X</a>
+                <a href="#" class="disabled">Y</a>
+                <a href="#" class="disabled">Z</a>
+            </div>
+        </nav>
+
+        <section class="glossaire-content">
+            <div class="container">
+                <p class="glossaire-intro">
+                    Ce glossaire regroupe les termes clés utilisés dans les domaines de l'<strong>intelligence artificielle</strong>, de la <strong>transcription automatique</strong> et de la <strong>gestion de réunion</strong>. Que vous soyez dirigeant, assistante de direction, juriste ou chef de projet, ces définitions vous aideront à mieux comprendre les outils qui transforment vos réunions.
+                </p>
+
+                <!-- A -->
+                <div class="letter-section" id="lettre-A">
+                    <div class="letter-heading">
+                        <span class="letter">A</span>
+                        <hr>
+                    </div>
+
+                    <article class="glossaire-card" id="ai-act">
+                        <h2><span class="term-icon"><i class="fas fa-gavel"></i></span> AI Act (Règlement européen sur l'IA)</h2>
+                        <div class="term-en">Artificial Intelligence Act</div>
+                        <p>L'<strong>AI Act</strong> est le règlement européen sur l'intelligence artificielle, adopté par l'Union européenne en 2024. Il constitue le premier cadre juridique au monde à encadrer spécifiquement les systèmes d'IA. Le texte classe les applications d'IA selon leur niveau de risque — minimal, limité, élevé ou inacceptable — et impose des obligations proportionnelles aux développeurs et aux utilisateurs. Les systèmes d'IA à haut risque (comme ceux utilisés dans les ressources humaines ou la justice) doivent respecter des exigences strictes de transparence, de documentation et de supervision humaine. Pour les entreprises utilisant des outils de <a href="#transcription-automatique">transcription automatique</a> ou de <a href="#ia-generative">génération de comptes rendus</a>, l'AI Act renforce l'importance de choisir des solutions conformes et auditables.</p>
+                        <div class="tags">
+                            <span class="tag">Réglementation</span>
+                            <span class="tag">Europe</span>
+                            <span class="tag">Conformité</span>
+                        </div>
+                    </article>
+
+                    <article class="glossaire-card" id="assemblee-generale">
+                        <h2><span class="term-icon"><i class="fas fa-users"></i></span> Assemblée générale (AG / AGA)</h2>
+                        <p>L'<strong>assemblée générale</strong> (AG) est une réunion statutaire au cours de laquelle les membres d'une organisation — actionnaires, associés ou adhérents — se rassemblent pour délibérer et voter sur des décisions importantes. On distingue l'assemblée générale ordinaire (AGO), qui traite des questions courantes comme l'approbation des comptes, et l'assemblée générale extraordinaire (AGE), réservée aux modifications des statuts ou aux opérations structurelles. L'assemblée générale annuelle (AGA) est obligatoire pour la plupart des structures juridiques (associations, sociétés). Le <a href="#proces-verbal">procès-verbal</a> de l'AG constitue un document légal essentiel qui doit être rédigé avec soin et conservé dans les archives de l'organisation.</p>
+                        <a href="blog/assemblee-generale-annuelle-definition-objectif-modele.html" class="read-more">Lire notre guide complet sur l'AGA <i class="fas fa-arrow-right"></i></a>
+                        <div class="tags">
+                            <span class="tag">Gouvernance</span>
+                            <span class="tag">Juridique</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- C -->
+                <div class="letter-section" id="lettre-C">
+                    <div class="letter-heading">
+                        <span class="letter">C</span>
+                        <hr>
+                    </div>
+
+                    <article class="glossaire-card" id="comite-social-economique">
+                        <h2><span class="term-icon"><i class="fas fa-building"></i></span> Comité Social et Économique (CSE)</h2>
+                        <p>Le <strong>Comité Social et Économique (CSE)</strong> est l'instance unique de représentation du personnel dans les entreprises de 11 salariés et plus, instaurée par les ordonnances Macron de 2017. Le CSE fusionne les anciennes instances — délégués du personnel, comité d'entreprise et CHSCT — en une seule structure. Il est consulté sur les questions relatives à l'organisation du travail, la formation professionnelle, les conditions de travail et la stratégie de l'entreprise. Les réunions du CSE doivent faire l'objet d'un <a href="#proces-verbal">procès-verbal</a> détaillé, souvent long et complexe à rédiger. C'est précisément dans ce contexte que les outils de <a href="#compte-rendu">compte rendu automatique</a> par IA se révèlent particulièrement utiles.</p>
+                        <div class="tags">
+                            <span class="tag">Droit du travail</span>
+                            <span class="tag">Représentation du personnel</span>
+                        </div>
+                    </article>
+
+                    <article class="glossaire-card" id="compte-rendu">
+                        <h2><span class="term-icon"><i class="fas fa-file-alt"></i></span> Compte rendu de réunion</h2>
+                        <p>Un <strong>compte rendu de réunion</strong> est un document écrit qui synthétise les échanges, les décisions prises et les actions définies lors d'une réunion. Contrairement au <a href="#verbatim">verbatim</a> qui retranscrit l'intégralité des propos, le compte rendu hiérarchise l'information et met en avant les points essentiels : contexte, participants, sujets abordés, décisions et prochaines étapes. Il sert de référence officielle, de mémoire collective et d'outil de suivi des engagements. Sa rédaction manuelle prend en moyenne 30 à 60 minutes par heure de réunion. Les solutions d'IA comme <a href="https://gilbert-assistant.ovh">Gilbert</a> permettent d'automatiser ce processus en générant un compte rendu structuré et personnalisé en quelques minutes à partir d'un enregistrement audio.</p>
+                        <div class="tags">
+                            <span class="tag">Productivité</span>
+                            <span class="tag">Documentation</span>
+                        </div>
+                    </article>
+
+                    <article class="glossaire-card" id="conseil-administration">
+                        <h2><span class="term-icon"><i class="fas fa-landmark"></i></span> Conseil d'administration</h2>
+                        <p>Le <strong>conseil d'administration</strong> (CA) est l'organe collégial de gouvernance chargé de définir la stratégie d'une organisation et de contrôler sa gestion. Composé d'administrateurs élus par l'assemblée générale, il se réunit périodiquement pour délibérer sur les grandes orientations : budget, investissements, nominations, fusions ou partenariats. Chaque séance donne lieu à la rédaction d'un <a href="#proces-verbal">procès-verbal</a> qui consigne les délibérations et les votes. Ce PV a une valeur juridique probante et peut être requis lors de contrôles ou de litiges. La qualité et l'exhaustivité du compte rendu de CA sont donc critiques, ce qui pousse de nombreuses organisations à adopter des outils d'<a href="#ia-generative">IA générative</a> pour en garantir la fidélité.</p>
+                        <div class="tags">
+                            <span class="tag">Gouvernance</span>
+                            <span class="tag">Stratégie</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- D -->
+                <div class="letter-section" id="lettre-D">
+                    <div class="letter-heading">
+                        <span class="letter">D</span>
+                        <hr>
+                    </div>
+
+                    <article class="glossaire-card" id="diarisation">
+                        <h2><span class="term-icon"><i class="fas fa-user-friends"></i></span> Diarisation (identification des locuteurs)</h2>
+                        <div class="term-en">Speaker diarization</div>
+                        <p>La <strong>diarisation</strong> (ou diarization en anglais) est le processus qui consiste à déterminer « qui parle quand » dans un enregistrement audio ou vidéo multi-locuteurs. Techniquement, l'algorithme segmente le flux audio en portions homogènes et regroupe celles qui correspondent à un même locuteur. C'est une brique essentielle de la <a href="#transcription-automatique">transcription automatique</a> de réunion : sans diarisation, le texte produit serait un bloc indifférencié, impossible à exploiter. Associée au <a href="#speech-to-text">speech-to-text</a>, la diarisation permet d'attribuer chaque intervention au bon participant, ce qui rend le <a href="#compte-rendu">compte rendu</a> fidèle et lisible. Les modèles récents atteignent une précision supérieure à 90 % dans des conditions audio raisonnables.</p>
+                        <div class="tags">
+                            <span class="tag">Audio</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Transcription</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- E -->
+                <div class="letter-section" id="lettre-E">
+                    <div class="letter-heading">
+                        <span class="letter">E</span>
+                        <hr>
+                    </div>
+
+                    <article class="glossaire-card" id="export-pdf-markdown">
+                        <h2><span class="term-icon"><i class="fas fa-file-export"></i></span> Export PDF / Markdown</h2>
+                        <p>L'<strong>export PDF / Markdown</strong> désigne la fonctionnalité qui permet de télécharger un document — typiquement un <a href="#compte-rendu">compte rendu de réunion</a> — dans un format standardisé et portable. Le <strong>PDF</strong> (Portable Document Format) garantit une mise en page fixe, idéale pour l'archivage, le partage par e-mail ou l'impression. Le <strong>Markdown</strong> est un format de texte léger et structuré, facilement convertible en HTML, Word ou tout autre format, très apprécié dans les environnements collaboratifs (Notion, GitHub, Confluence). Proposer ces deux options d'export permet de couvrir à la fois les besoins formels (envoi au juridique, archivage réglementaire) et les usages quotidiens (intégration dans un wiki ou un outil de gestion de projet).</p>
+                        <div class="tags">
+                            <span class="tag">Format</span>
+                            <span class="tag">Productivité</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- H -->
+                <div class="letter-section" id="lettre-H">
+                    <div class="letter-heading">
+                        <span class="letter">H</span>
+                        <hr>
+                    </div>
+
+                    <article class="glossaire-card" id="hallucination-ia">
+                        <h2><span class="term-icon"><i class="fas fa-exclamation-triangle"></i></span> Hallucination (IA)</h2>
+                        <div class="term-en">AI hallucination</div>
+                        <p>Une <strong>hallucination</strong> en intelligence artificielle désigne le phénomène par lequel un <a href="#modele-langage">modèle de langage</a> génère des informations fausses, inventées ou incohérentes, tout en les présentant avec un niveau de confiance élevé. Dans le contexte de la rédaction automatique de <a href="#compte-rendu">comptes rendus</a>, une hallucination pourrait par exemple attribuer une décision à un participant qui ne l'a pas formulée, ou inventer un chiffre absent de la discussion. C'est l'un des défis majeurs de l'<a href="#ia-generative">IA générative</a> appliquée aux réunions. Pour limiter ce risque, les meilleurs outils s'appuient sur la transcription source comme ancrage factuel et proposent des mécanismes de vérification.</p>
+                        <div class="tags">
+                            <span class="tag">IA</span>
+                            <span class="tag">Fiabilité</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- I -->
+                <div class="letter-section" id="lettre-I">
+                    <div class="letter-heading">
+                        <span class="letter">I</span>
+                        <hr>
+                    </div>
+
+                    <article class="glossaire-card" id="ia-generative">
+                        <h2><span class="term-icon"><i class="fas fa-brain"></i></span> IA générative</h2>
+                        <div class="term-en">Generative AI</div>
+                        <p>L'<strong>IA générative</strong> désigne une catégorie d'<a href="#intelligence-artificielle">intelligence artificielle</a> capable de créer du contenu original — texte, image, audio, code — à partir de données d'entraînement. Contrairement aux IA classiques qui se limitent à classer ou prédire, les modèles génératifs (comme les <a href="#modele-langage">LLM</a>) produisent de nouvelles sorties en s'appuyant sur des architectures de type Transformer. Appliquée aux réunions, l'IA générative permet de transformer une <a href="#transcription-automatique">transcription brute</a> en un <a href="#compte-rendu">compte rendu</a> structuré, synthétique et rédigé dans un style professionnel. C'est cette technologie qui est au cœur de <a href="https://gilbert-assistant.ovh">Gilbert</a>, combinée à des mécanismes d'ancrage factuel pour garantir la fidélité des résumés.</p>
+                        <div class="tags">
+                            <span class="tag">Technologie</span>
+                            <span class="tag">Deep Learning</span>
+                        </div>
+                    </article>
+
+                    <article class="glossaire-card" id="ia-souveraine">
+                        <h2><span class="term-icon"><i class="fas fa-shield-alt"></i></span> IA souveraine</h2>
+                        <div class="term-en">Sovereign AI</div>
+                        <p>Une <strong>IA souveraine</strong> est une solution d'intelligence artificielle dont l'ensemble de la chaîne de valeur — développement, entraînement, hébergement et traitement des données — est maîtrisé au sein d'un même territoire ou espace juridique, typiquement l'Union européenne ou la France. Contrairement aux solutions qui transitent par des serveurs américains ou utilisent des API de fournisseurs étrangers soumis au Cloud Act, une IA souveraine garantit que les données des utilisateurs restent protégées par le droit européen et le <a href="#rgpd">RGPD</a>. Cette approche est cruciale pour les entreprises, les collectivités et les organisations qui manipulent des informations sensibles (réunions stratégiques, données RH, délibérations de <a href="#conseil-administration">conseil d'administration</a>). Gilbert est une IA 100 % souveraine : développée en France, hébergée sur des serveurs français, elle offre un niveau de protection maximal sans compromis sur la performance.</p>
+                        <a href="blog/pourquoi-choisir-ia-souveraine-francaise-2025.html" class="read-more">Pourquoi choisir une IA souveraine française ? <i class="fas fa-arrow-right"></i></a>
+                        <div class="tags">
+                            <span class="tag">Souveraineté</span>
+                            <span class="tag">Sécurité</span>
+                            <span class="tag">France</span>
+                        </div>
+                    </article>
+
+                    <article class="glossaire-card" id="intelligence-artificielle">
+                        <h2><span class="term-icon"><i class="fas fa-microchip"></i></span> Intelligence artificielle (IA)</h2>
+                        <div class="term-en">Artificial Intelligence (AI)</div>
+                        <p>L'<strong>intelligence artificielle</strong> (IA) est un domaine de l'informatique qui vise à concevoir des systèmes capables de réaliser des tâches nécessitant habituellement l'intelligence humaine : compréhension du langage, reconnaissance de formes, prise de décision, apprentissage par l'expérience. L'IA repose sur des techniques variées : apprentissage automatique (machine learning), apprentissage profond (deep learning), <a href="#nlp">traitement du langage naturel</a>, vision par ordinateur, etc. Dans le contexte des réunions, l'IA intervient à chaque étape : la <a href="#speech-to-text">reconnaissance vocale</a> convertit l'audio en texte, la <a href="#diarisation">diarisation</a> identifie les locuteurs, et l'<a href="#ia-generative">IA générative</a> rédige le <a href="#compte-rendu">compte rendu</a> final.</p>
+                        <div class="tags">
+                            <span class="tag">Technologie</span>
+                            <span class="tag">Fondamentaux</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- M -->
+                <div class="letter-section" id="lettre-M">
+                    <div class="letter-heading">
+                        <span class="letter">M</span>
+                        <hr>
+                    </div>
+
+                    <article class="glossaire-card" id="modele-langage">
+                        <h2><span class="term-icon"><i class="fas fa-project-diagram"></i></span> Modèle de langage (LLM)</h2>
+                        <div class="term-en">Large Language Model</div>
+                        <p>Un <strong>modèle de langage</strong> (ou LLM, pour Large Language Model) est un réseau de neurones de grande taille, entraîné sur d'immenses corpus de texte, capable de comprendre, générer et manipuler du langage naturel. Les LLM s'appuient sur l'architecture Transformer et comptent des milliards de paramètres. GPT, Claude, Mistral ou LLaMA en sont des exemples. Dans le cadre de la rédaction de <a href="#compte-rendu">comptes rendus</a>, le LLM reçoit la <a href="#transcription-automatique">transcription</a> de la réunion en entrée et produit un résumé structuré en sortie. La qualité du résultat dépend de la taille du modèle, de son entraînement et des instructions (prompt) qui lui sont données. Les solutions <a href="#ia-souveraine">souveraines</a> privilégient des modèles entraînés ou hébergés en France.</p>
+                        <div class="tags">
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">NLP</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- N -->
+                <div class="letter-section" id="lettre-N">
+                    <div class="letter-heading">
+                        <span class="letter">N</span>
+                        <hr>
+                    </div>
+
+                    <article class="glossaire-card" id="nlp">
+                        <h2><span class="term-icon"><i class="fas fa-language"></i></span> NLP (Traitement du langage naturel)</h2>
+                        <div class="term-en">Natural Language Processing</div>
+                        <p>Le <strong>NLP</strong> (Natural Language Processing), ou <strong>traitement du langage naturel</strong> en français, est une branche de l'<a href="#intelligence-artificielle">intelligence artificielle</a> qui se consacre à l'interaction entre les machines et le langage humain. Le NLP englobe un large éventail de tâches : analyse syntaxique, extraction d'entités, analyse de sentiment, traduction automatique, résumé de texte et <a href="#speech-to-text">reconnaissance vocale</a>. C'est le socle technologique sur lequel reposent les outils de <a href="#transcription-automatique">transcription</a> et de rédaction automatique de <a href="#compte-rendu">comptes rendus</a>. Les avancées récentes des <a href="#modele-langage">modèles de langage</a> (LLM) ont considérablement amélioré les performances du NLP, permettant une compréhension contextuelle bien plus fine du discours oral et écrit.</p>
+                        <div class="tags">
+                            <span class="tag">Linguistique</span>
+                            <span class="tag">IA</span>
+                            <span class="tag">Technologie</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- O -->
+                <div class="letter-section" id="lettre-O">
+                    <div class="letter-heading">
+                        <span class="letter">O</span>
+                        <hr>
+                    </div>
+
+                    <article class="glossaire-card" id="ordre-du-jour">
+                        <h2><span class="term-icon"><i class="fas fa-list-ol"></i></span> Ordre du jour</h2>
+                        <div class="term-en">Meeting agenda</div>
+                        <p>L'<strong>ordre du jour</strong> est le document qui liste l'ensemble des points à aborder lors d'une réunion, présenté aux participants avant la séance. Il structure le déroulement des échanges, fixe les priorités et permet à chaque participant de se préparer. Dans les réunions formelles (<a href="#assemblee-generale">assemblées générales</a>, <a href="#comite-social-economique">CSE</a>, <a href="#conseil-administration">conseil d'administration</a>), l'ordre du jour a souvent une valeur réglementaire : seuls les points inscrits peuvent faire l'objet d'un vote. Un bon ordre du jour est précis, réaliste en termes de timing et envoyé suffisamment à l'avance. Il sert également de trame au <a href="#compte-rendu">compte rendu</a>, qui reprend idéalement sa structure pour faciliter le suivi des décisions.</p>
+                        <div class="tags">
+                            <span class="tag">Organisation</span>
+                            <span class="tag">Réunion</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- P -->
+                <div class="letter-section" id="lettre-P">
+                    <div class="letter-heading">
+                        <span class="letter">P</span>
+                        <hr>
+                    </div>
+
+                    <article class="glossaire-card" id="proces-verbal">
+                        <h2><span class="term-icon"><i class="fas fa-stamp"></i></span> Procès-verbal (PV)</h2>
+                        <p>Le <strong>procès-verbal</strong> (PV) est un document officiel et juridiquement opposable qui consigne de manière fidèle et exhaustive les échanges, délibérations et décisions d'une réunion formelle. À la différence du <a href="#compte-rendu">compte rendu</a>, qui peut être synthétique, le PV doit rapporter avec précision l'intégralité des débats, les résultats des votes et les éventuelles oppositions. Il est obligatoire pour les <a href="#assemblee-generale">assemblées générales</a>, les réunions de <a href="#comite-social-economique">CSE</a> et les séances de <a href="#conseil-administration">conseil d'administration</a>. Le PV doit être signé, approuvé et archivé. Sa rédaction requiert une grande rigueur, ce qui en fait un cas d'usage idéal pour les outils de <a href="#transcription-automatique">transcription</a> et d'IA qui garantissent l'exhaustivité tout en réduisant le temps de rédaction.</p>
+                        <div class="tags">
+                            <span class="tag">Juridique</span>
+                            <span class="tag">Conformité</span>
+                        </div>
+                    </article>
+
+                    <article class="glossaire-card" id="prompt">
+                        <h2><span class="term-icon"><i class="fas fa-terminal"></i></span> Prompt (instruction à l'IA)</h2>
+                        <div class="term-en">Prompt / Prompt engineering</div>
+                        <p>Un <strong>prompt</strong> est l'instruction ou la requête formulée en langage naturel qu'un utilisateur soumet à un <a href="#modele-langage">modèle de langage</a> pour obtenir une réponse. La qualité du résultat dépend directement de la précision et de la structure du prompt — c'est ce qu'on appelle le <em>prompt engineering</em>. Dans le cas d'un outil de <a href="#compte-rendu">compte rendu</a> automatique, le prompt peut spécifier le format souhaité (synthétique, détaillé, structuré par thème), le ton (formel, courant) et les éléments à mettre en avant (décisions, actions, participants). Les outils bien conçus intègrent des prompts optimisés en arrière-plan pour que l'utilisateur n'ait pas besoin de maîtriser cette technique.</p>
+                        <div class="tags">
+                            <span class="tag">IA</span>
+                            <span class="tag">Utilisation</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- R -->
+                <div class="letter-section" id="lettre-R">
+                    <div class="letter-heading">
+                        <span class="letter">R</span>
+                        <hr>
+                    </div>
+
+                    <article class="glossaire-card" id="rgpd">
+                        <h2><span class="term-icon"><i class="fas fa-lock"></i></span> RGPD (Règlement Général sur la Protection des Données)</h2>
+                        <div class="term-en">General Data Protection Regulation (GDPR)</div>
+                        <p>Le <strong>RGPD</strong> (Règlement Général sur la Protection des Données) est le règlement européen entré en vigueur le 25 mai 2018, qui encadre la collecte, le traitement et le stockage des données personnelles des résidents de l'Union européenne. Il impose aux organisations le respect de principes fondamentaux : minimisation des données, consentement éclairé, droit d'accès et de suppression, portabilité et notification en cas de violation. Pour les outils de <a href="#transcription-automatique">transcription</a> et de <a href="#compte-rendu">compte rendu</a> de réunion, le RGPD est un enjeu critique car les enregistrements audio contiennent par nature des données personnelles (voix, noms, propos). Choisir une solution <a href="#ia-souveraine">souveraine</a> hébergée en France garantit une conformité RGPD native, sans transfert de données vers des juridictions tiers.</p>
+                        <a href="blog/rgpd-ia-comptes-rendus-reunion-conformite-garantie.html" class="read-more">RGPD et IA : comment garantir la conformité <i class="fas fa-arrow-right"></i></a>
+                        <div class="tags">
+                            <span class="tag">Réglementation</span>
+                            <span class="tag">Données personnelles</span>
+                            <span class="tag">Europe</span>
+                        </div>
+                    </article>
+
+                    <article class="glossaire-card" id="reconnaissance-vocale">
+                        <h2><span class="term-icon"><i class="fas fa-assistive-listening-systems"></i></span> Reconnaissance vocale</h2>
+                        <div class="term-en">Voice recognition / Speech recognition</div>
+                        <p>La <strong>reconnaissance vocale</strong> est la technologie qui permet à une machine de convertir un signal audio contenant de la parole humaine en texte écrit. Elle englobe à la fois le <a href="#speech-to-text">speech-to-text</a> (transcription du discours) et l'identification du locuteur. La reconnaissance vocale moderne repose sur des réseaux de neurones profonds entraînés sur des milliers d'heures d'enregistrements audio dans différentes langues et conditions acoustiques. La performance se mesure en taux d'erreur de mots (WER, Word Error Rate). Les meilleurs modèles actuels, comme <a href="#whisper">Whisper</a>, atteignent un WER inférieur à 5 % pour le français dans des conditions de bon enregistrement. Cette technologie est la première étape de tout pipeline de <a href="#compte-rendu">compte rendu automatique</a>.</p>
+                        <div class="tags">
+                            <span class="tag">Audio</span>
+                            <span class="tag">IA</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- S -->
+                <div class="letter-section" id="lettre-S">
+                    <div class="letter-heading">
+                        <span class="letter">S</span>
+                        <hr>
+                    </div>
+
+                    <article class="glossaire-card" id="speech-to-text">
+                        <h2><span class="term-icon"><i class="fas fa-microphone-alt"></i></span> Speech-to-text (conversion parole en texte)</h2>
+                        <div class="term-en">Speech-to-text (STT)</div>
+                        <p>Le <strong>speech-to-text</strong> (STT), ou conversion de la parole en texte, est le processus automatisé de transformation d'un flux audio vocal en texte écrit exploitable. C'est la composante technique au cœur de la <a href="#transcription-automatique">transcription automatique</a>. Le processus se décompose en plusieurs étapes : captation du signal audio, segmentation, extraction de caractéristiques acoustiques (spectrogrammes), et décodage via un modèle neuronal qui produit le texte final. La qualité du STT dépend de la langue, de l'accent, du bruit ambiant, du nombre de locuteurs et de la qualité du microphone. Combiné à la <a href="#diarisation">diarisation</a> et au <a href="#nlp">NLP</a>, le speech-to-text constitue le socle de toute solution de <a href="#compte-rendu">compte rendu automatique</a> de réunion.</p>
+                        <div class="tags">
+                            <span class="tag">Audio</span>
+                            <span class="tag">Transcription</span>
+                            <span class="tag">Technologie</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- T -->
+                <div class="letter-section" id="lettre-T">
+                    <div class="letter-heading">
+                        <span class="letter">T</span>
+                        <hr>
+                    </div>
+
+                    <article class="glossaire-card" id="transcription-automatique">
+                        <h2><span class="term-icon"><i class="fas fa-closed-captioning"></i></span> Transcription automatique</h2>
+                        <div class="term-en">Automatic transcription</div>
+                        <p>La <strong>transcription automatique</strong> est le processus qui consiste à convertir un enregistrement audio ou vidéo en texte écrit à l'aide de technologies de <a href="#speech-to-text">speech-to-text</a> et de <a href="#nlp">traitement du langage naturel</a>. Dans le contexte des réunions, la transcription automatique produit un <a href="#verbatim">verbatim</a> complet des échanges, qui sert ensuite de base à la rédaction d'un <a href="#compte-rendu">compte rendu</a> structuré. La transcription automatique moderne intègre la <a href="#diarisation">diarisation</a> (identification des locuteurs), la ponctuation automatique et la gestion des termes techniques. Sa fiabilité dépend du modèle utilisé (par exemple <a href="#whisper">Whisper</a>), de la qualité de l'audio et de la complexité linguistique du discours. C'est une technologie clé de la productivité en entreprise.</p>
+                        <div class="tags">
+                            <span class="tag">Productivité</span>
+                            <span class="tag">Audio</span>
+                            <span class="tag">IA</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- V -->
+                <div class="letter-section" id="lettre-V">
+                    <div class="letter-heading">
+                        <span class="letter">V</span>
+                        <hr>
+                    </div>
+
+                    <article class="glossaire-card" id="verbatim">
+                        <h2><span class="term-icon"><i class="fas fa-quote-left"></i></span> Verbatim</h2>
+                        <p>Un <strong>verbatim</strong> est la retranscription intégrale, mot pour mot, de l'ensemble des propos tenus au cours d'une réunion, d'un entretien ou d'une audition. Le verbatim ne comporte ni résumé ni reformulation : il reproduit fidèlement la parole de chaque intervenant, y compris les hésitations, répétitions et expressions orales. Ce format est utilisé dans les contextes qui exigent une fidélité absolue : procédures judiciaires, études qualitatives, réunions réglementaires. La <a href="#transcription-automatique">transcription automatique</a> produit naturellement un verbatim, qui peut ensuite être transformé par <a href="#ia-generative">IA générative</a> en un <a href="#compte-rendu">compte rendu</a> synthétique et structuré, plus adapté à la diffusion et à la prise de décision.</p>
+                        <div class="tags">
+                            <span class="tag">Documentation</span>
+                            <span class="tag">Fidélité</span>
+                        </div>
+                    </article>
+
+                    <article class="glossaire-card" id="visioconference">
+                        <h2><span class="term-icon"><i class="fas fa-video"></i></span> Visioconférence</h2>
+                        <div class="term-en">Video conferencing</div>
+                        <p>La <strong>visioconférence</strong> est une technologie de communication qui permet à deux ou plusieurs personnes de se voir et de s'entendre en temps réel à distance, via Internet. Les plateformes de visioconférence les plus utilisées en entreprise sont Zoom, Microsoft Teams, Google Meet et Webex. Depuis 2020, la visioconférence est devenue le mode de réunion dominant dans de nombreuses organisations. Cette généralisation a amplifié le besoin d'outils de <a href="#compte-rendu">compte rendu automatique</a> : les réunions en ligne sont plus fréquentes, plus difficiles à suivre et génèrent un volume de décisions à documenter qui dépasse la capacité de rédaction manuelle. Les outils comme <a href="https://gilbert-assistant.ovh">Gilbert</a> s'intègrent nativement aux fichiers audio et vidéo issus de ces plateformes.</p>
+                        <div class="tags">
+                            <span class="tag">Communication</span>
+                            <span class="tag">Réunion à distance</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- W -->
+                <div class="letter-section" id="lettre-W">
+                    <div class="letter-heading">
+                        <span class="letter">W</span>
+                        <hr>
+                    </div>
+
+                    <article class="glossaire-card" id="whisper">
+                        <h2><span class="term-icon"><i class="fas fa-wave-square"></i></span> Whisper (modèle de reconnaissance vocale)</h2>
+                        <div class="term-en">Whisper by OpenAI</div>
+                        <p><strong>Whisper</strong> est un modèle de <a href="#reconnaissance-vocale">reconnaissance vocale</a> open source développé par OpenAI, publié en 2022. Entraîné sur plus de 680 000 heures d'audio multilingue issu du web, Whisper est capable de transcrire et de traduire de la parole dans plus de 90 langues. Il se distingue par sa robustesse face au bruit, aux accents et aux conditions d'enregistrement variées. Le modèle existe en plusieurs tailles (tiny, base, small, medium, large) offrant un compromis entre vitesse et précision. Whisper est largement utilisé comme brique de <a href="#speech-to-text">speech-to-text</a> dans les pipelines de <a href="#transcription-automatique">transcription automatique</a>. Les solutions <a href="#ia-souveraine">souveraines</a> comme Gilbert peuvent déployer Whisper sur des serveurs français, garantissant que l'audio ne quitte jamais le territoire national.</p>
+                        <div class="tags">
+                            <span class="tag">Open Source</span>
+                            <span class="tag">Modèle</span>
+                            <span class="tag">Audio</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- CTA -->
+                <div class="glossaire-cta">
+                    <h2>Prêt à transformer vos réunions ?</h2>
+                    <p>Gilbert utilise ces technologies pour générer vos comptes rendus automatiquement, en toute souveraineté.</p>
+                    <a href="https://gilbert-assistant.ovh" class="cta-button">Essayer Gilbert gratuitement</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="assets/images/img/logo_gilbert.png" alt="Logo Gilbert" class="footer-logo" loading="lazy">
+                    <p>Gilbert est une solution d'IA française et souveraine dédiée aux comptes rendus de réunions.</p>
+                </div>
+                <div class="footer-links"><h4>Navigation</h4><ul><li><a href="index.html">Accueil</a></li><li><a href="index.html#features">Fonctionnalités</a></li><li><a href="index.html#pricing">Tarifs</a></li><li><a href="blog.html">Blog</a></li><li><a href="api.html">API</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div class="footer-links"><h4>Légal</h4><ul><li><a href="conditions-utilisation.html">Conditions d'utilisation</a></li><li><a href="politique-confidentialite.html">Politique de confidentialité</a></li><li><a href="mentions-legales.html">Mentions légales</a></li></ul></div>
+                <div class="footer-contact"><h4>Contact</h4><p><i class="fas fa-phone"></i> 07 50 94 75 43</p><div class="social-icons"><a href="https://www.linkedin.com/company/lexiapro/?viewAsMember=true" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a></div></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2025 Gilbert. Tous droits réservés.</p></div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+    <!-- JSON-LD DefinedTermSet Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "DefinedTermSet",
+        "name": "Glossaire IA et réunion",
+        "description": "Glossaire complet des termes liés à l'intelligence artificielle, la transcription de réunion et les comptes rendus automatiques.",
+        "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html",
+        "inLanguage": "fr",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Gilbert",
+            "url": "https://www.gilbert-assistant.fr"
+        },
+        "hasDefinedTerm": [
+            {
+                "@type": "DefinedTerm",
+                "name": "AI Act (Règlement européen sur l'IA)",
+                "description": "Premier cadre juridique européen encadrant spécifiquement les systèmes d'intelligence artificielle, classant les applications par niveau de risque et imposant des obligations de transparence et de conformité.",
+                "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html#ai-act"
+            },
+            {
+                "@type": "DefinedTerm",
+                "name": "Assemblée générale (AG / AGA)",
+                "description": "Réunion statutaire au cours de laquelle les membres d'une organisation se rassemblent pour délibérer et voter sur des décisions importantes, incluant l'approbation des comptes et les modifications de statuts.",
+                "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html#assemblee-generale"
+            },
+            {
+                "@type": "DefinedTerm",
+                "name": "Comité Social et Économique (CSE)",
+                "description": "Instance unique de représentation du personnel dans les entreprises de 11 salariés et plus, fusionnant les anciens délégués du personnel, comité d'entreprise et CHSCT.",
+                "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html#comite-social-economique"
+            },
+            {
+                "@type": "DefinedTerm",
+                "name": "Compte rendu de réunion",
+                "description": "Document écrit synthétisant les échanges, décisions et actions définies lors d'une réunion, servant de référence officielle et d'outil de suivi des engagements.",
+                "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html#compte-rendu"
+            },
+            {
+                "@type": "DefinedTerm",
+                "name": "Conseil d'administration",
+                "description": "Organe collégial de gouvernance chargé de définir la stratégie d'une organisation et de contrôler sa gestion, dont les délibérations font l'objet de procès-verbaux à valeur juridique.",
+                "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html#conseil-administration"
+            },
+            {
+                "@type": "DefinedTerm",
+                "name": "Diarisation (identification des locuteurs)",
+                "description": "Processus consistant à déterminer qui parle quand dans un enregistrement audio multi-locuteurs, essentiel pour attribuer chaque intervention au bon participant dans une transcription.",
+                "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html#diarisation"
+            },
+            {
+                "@type": "DefinedTerm",
+                "name": "Export PDF / Markdown",
+                "description": "Fonctionnalité permettant de télécharger un compte rendu dans un format standardisé et portable, adapté à l'archivage (PDF) ou à l'intégration collaborative (Markdown).",
+                "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html#export-pdf-markdown"
+            },
+            {
+                "@type": "DefinedTerm",
+                "name": "Hallucination (IA)",
+                "description": "Phénomène par lequel un modèle de langage génère des informations fausses ou inventées tout en les présentant avec un niveau de confiance élevé.",
+                "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html#hallucination-ia"
+            },
+            {
+                "@type": "DefinedTerm",
+                "name": "IA générative",
+                "description": "Catégorie d'intelligence artificielle capable de créer du contenu original à partir de données d'entraînement, utilisée pour transformer des transcriptions en comptes rendus structurés.",
+                "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html#ia-generative"
+            },
+            {
+                "@type": "DefinedTerm",
+                "name": "IA souveraine",
+                "description": "Solution d'intelligence artificielle dont l'ensemble de la chaîne de valeur est maîtrisé au sein d'un même espace juridique, garantissant la protection des données par le droit européen et le RGPD.",
+                "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html#ia-souveraine"
+            },
+            {
+                "@type": "DefinedTerm",
+                "name": "Intelligence artificielle (IA)",
+                "description": "Domaine de l'informatique visant à concevoir des systèmes capables de réaliser des tâches nécessitant habituellement l'intelligence humaine, comme la compréhension du langage et la prise de décision.",
+                "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html#intelligence-artificielle"
+            },
+            {
+                "@type": "DefinedTerm",
+                "name": "Modèle de langage (LLM)",
+                "description": "Réseau de neurones de grande taille entraîné sur d'immenses corpus de texte, capable de comprendre et de générer du langage naturel, au cœur des outils de rédaction automatique.",
+                "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html#modele-langage"
+            },
+            {
+                "@type": "DefinedTerm",
+                "name": "NLP (Traitement du langage naturel)",
+                "description": "Branche de l'intelligence artificielle consacrée à l'interaction entre les machines et le langage humain, englobant l'analyse syntaxique, l'extraction d'entités et le résumé de texte.",
+                "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html#nlp"
+            },
+            {
+                "@type": "DefinedTerm",
+                "name": "Ordre du jour",
+                "description": "Document listant les points à aborder lors d'une réunion, structurant le déroulement des échanges et servant de trame au compte rendu.",
+                "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html#ordre-du-jour"
+            },
+            {
+                "@type": "DefinedTerm",
+                "name": "Procès-verbal (PV)",
+                "description": "Document officiel et juridiquement opposable consignant fidèlement les échanges, délibérations et décisions d'une réunion formelle, obligatoire pour les AG, CSE et CA.",
+                "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html#proces-verbal"
+            },
+            {
+                "@type": "DefinedTerm",
+                "name": "Prompt (instruction à l'IA)",
+                "description": "Instruction ou requête en langage naturel soumise à un modèle de langage pour obtenir une réponse, dont la qualité détermine directement le résultat produit.",
+                "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html#prompt"
+            },
+            {
+                "@type": "DefinedTerm",
+                "name": "RGPD",
+                "description": "Règlement européen encadrant la collecte, le traitement et le stockage des données personnelles, imposant le consentement, le droit d'accès et la notification en cas de violation.",
+                "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html#rgpd"
+            },
+            {
+                "@type": "DefinedTerm",
+                "name": "Reconnaissance vocale",
+                "description": "Technologie permettant de convertir un signal audio contenant de la parole humaine en texte écrit, première étape de tout pipeline de compte rendu automatique.",
+                "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html#reconnaissance-vocale"
+            },
+            {
+                "@type": "DefinedTerm",
+                "name": "Speech-to-text",
+                "description": "Processus automatisé de transformation d'un flux audio vocal en texte écrit, composante technique au cœur de la transcription automatique de réunion.",
+                "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html#speech-to-text"
+            },
+            {
+                "@type": "DefinedTerm",
+                "name": "Transcription automatique",
+                "description": "Processus de conversion d'un enregistrement audio ou vidéo en texte écrit à l'aide de technologies de speech-to-text et de traitement du langage naturel.",
+                "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html#transcription-automatique"
+            },
+            {
+                "@type": "DefinedTerm",
+                "name": "Verbatim",
+                "description": "Retranscription intégrale, mot pour mot, de l'ensemble des propos tenus au cours d'une réunion, reproduisant fidèlement la parole de chaque intervenant.",
+                "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html#verbatim"
+            },
+            {
+                "@type": "DefinedTerm",
+                "name": "Visioconférence",
+                "description": "Technologie de communication permettant à plusieurs personnes de se voir et s'entendre en temps réel à distance via Internet, mode de réunion dominant en entreprise.",
+                "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html#visioconference"
+            },
+            {
+                "@type": "DefinedTerm",
+                "name": "Whisper",
+                "description": "Modèle de reconnaissance vocale open source développé par OpenAI, capable de transcrire et traduire de la parole dans plus de 90 langues avec une grande robustesse.",
+                "url": "https://www.gilbert-assistant.fr/glossaire-ia-reunion.html#whisper"
+            }
+        ]
+    }
+    </script>
+
+    <!-- FAQ Schema for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Qu'est-ce qu'un compte rendu de réunion ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Un compte rendu de réunion est un document écrit qui synthétise les échanges, les décisions prises et les actions définies lors d'une réunion. Il sert de référence officielle et d'outil de suivi des engagements."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Qu'est-ce qu'une IA souveraine ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Une IA souveraine est une solution d'intelligence artificielle dont l'ensemble de la chaîne de valeur — développement, entraînement, hébergement et traitement des données — est maîtrisé au sein d'un même territoire ou espace juridique, garantissant la protection des données par le droit européen et le RGPD."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Qu'est-ce que la transcription automatique ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La transcription automatique est le processus qui consiste à convertir un enregistrement audio ou vidéo en texte écrit à l'aide de technologies de speech-to-text et de traitement du langage naturel."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Quelle est la définition d'un PV de réunion ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le procès-verbal (PV) est un document officiel et juridiquement opposable qui consigne de manière fidèle et exhaustive les échanges, délibérations et décisions d'une réunion formelle. Il est obligatoire pour les assemblées générales, les réunions de CSE et les séances de conseil d'administration."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Qu'est-ce que la diarisation ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La diarisation est le processus qui consiste à déterminer qui parle quand dans un enregistrement audio multi-locuteurs. C'est une brique essentielle de la transcription automatique de réunion qui permet d'attribuer chaque intervention au bon participant."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Qu'est-ce que le speech-to-text ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le speech-to-text (STT) est le processus automatisé de transformation d'un flux audio vocal en texte écrit exploitable. Il constitue le socle technique de toute solution de transcription et de compte rendu automatique de réunion."
+                }
+            }
+        ]
+    }
+    </script>
+</body>
+</html>

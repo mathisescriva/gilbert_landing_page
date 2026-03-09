@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcrire vos réunions Teams, Zoom et Google Meet automatiquement | Gilbert</title>
+    <meta name="description" content="Comment transcrire automatiquement vos réunions Teams, Zoom et Google Meet avec l'IA française Gilbert. Guide étape par étape pour chaque plateforme. Solution souveraine RGPD.">
+    <meta name="keywords" content="transcrire réunion Teams, transcription Zoom automatique, enregistrer réunion Google Meet, outil transcription visioconférence, transcription automatique réunion, IA transcription française">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Hugo Fouan">
+    <link rel="canonical" href="https://www.gilbert-assistant.fr/blog/transcrire-reunion-teams-zoom-google-meet-automatiquement.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Transcrire vos réunions Teams, Zoom et Google Meet automatiquement">
+    <meta property="og:description" content="Guide étape par étape pour transcrire automatiquement vos visioconférences Teams, Zoom et Google Meet avec l'IA française Gilbert.">
+    <meta property="og:url" content="https://www.gilbert-assistant.fr/blog/transcrire-reunion-teams-zoom-google-meet-automatiquement.html">
+    <meta property="og:site_name" content="Gilbert">
+    <meta property="og:image" content="https://www.gilbert-assistant.fr/assets/images/img/logo_gilbert.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="article:published_time" content="2025-06-05">
+    <meta property="article:author" content="Hugo Fouan">
+    <meta property="article:section" content="Intégrations">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Transcrire vos réunions Teams, Zoom et Google Meet automatiquement">
+    <meta name="twitter:description" content="Guide complet pour transcrire automatiquement vos visioconférences avec l'IA souveraine Gilbert.">
+    <meta name="twitter:image" content="https://www.gilbert-assistant.fr/assets/images/img/logo_gilbert.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../blog-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <style>
+        :root {
+            --primary: #4F46E5;
+            --primary-rgb: 79, 70, 229;
+            --secondary: #9333EA;
+            --secondary-rgb: 147, 51, 234;
+            --text-dark: #1F2937;
+            --text-light: #6B7280;
+            --background: #F9FAFB;
+            --white: #FFFFFF;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-dark);
+            background-color: var(--background);
+        }
+        .article-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.7;
+        }
+        
+        .article-header {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 1.5rem;
+        }
+        
+        .article-meta {
+            display: flex;
+            align-items: center;
+            margin: 1rem 0;
+        }
+        
+        .article-author-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 1rem;
+        }
+        
+        .article-tag {
+            display: inline-block;
+            background-color: rgba(var(--primary-rgb), 0.1);
+            color: var(--primary);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .article-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+        }
+        
+        .article-date {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        
+        .article-content h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 2.5rem 0 1.5rem;
+            color: var(--primary);
+        }
+        
+        .article-content h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 1.5rem 0 1rem;
+            color: var(--text-dark);
+        }
+        
+        .article-content p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .article-content ul, .article-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        
+        .article-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .article-content blockquote {
+            border-left: 4px solid var(--primary);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-light);
+        }
+        
+        .article-content .highlight {
+            background-color: rgba(var(--primary-rgb), 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .article-content .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 1.5rem 0;
+            transition: transform 0.3s ease;
+        }
+        
+        .article-content .cta-button:hover {
+            transform: translateY(-3px);
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #eaeaea;
+            margin: 2rem 0;
+        }
+        
+        .back-to-blog {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+        
+        .back-to-blog i {
+            margin-right: 0.5rem;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            color: var(--text-light);
+        }
+
+        .breadcrumb a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            margin: 0 0.4rem;
+        }
+
+        .step-box {
+            background-color: #f3f4f6;
+            border-left: 4px solid var(--primary);
+            border-radius: 0 10px 10px 0;
+            padding: 1.2rem 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .step-box strong {
+            color: var(--primary);
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            font-size: 0.95rem;
+        }
+
+        .comparison-table th, .comparison-table td {
+            padding: 0.8rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .comparison-table th {
+            background-color: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/images/img/logo_gilbert.png" alt="Logo Gilbert" class="main-logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html#features">Fonctionnalités</a>
+                <a href="../index.html#pricing">Tarifs</a>
+                <a href="../blog.html" class="active">Blog</a>
+                <a href="../api.html">API</a>
+                <a href="../contact.html">Contact</a>
+            </div>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Article Hero Section -->
+    <section class="blog-hero" style="background: linear-gradient(135deg, #2c3e8c 0%, #3951c6 60%, #4a63d2 100%); padding: 6rem 0 3rem; color: white; position: relative; overflow: hidden;">
+        <div class="container" style="position: relative; z-index: 2;">
+            <div style="display: inline-block; background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px); padding: 0.5rem 1rem; border-radius: 20px; margin-bottom: 1.5rem; border: 1px solid rgba(255, 255, 255, 0.1);">
+                🇫🇷 BLOG GILBERT
+            </div>
+            <h1 style="font-size: 3rem; font-weight: 800; margin-bottom: 1.5rem; max-width: 800px;">Comment transcrire automatiquement vos réunions Teams, Zoom et Google Meet</h1>
+            <div style="display: flex; align-items: center; margin-top: 2rem;">
+                <img src="../assets/images/hugo.jpg" alt="Hugo Fouan" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 1rem;" loading="lazy">
+                <div>
+                    <div style="font-weight: 600;">Hugo Fouan</div>
+                    <div style="opacity: 0.8; font-size: 0.9rem;">5 juin 2025 · Intégrations</div>
+                </div>
+            </div>
+        </div>
+        <!-- Décorative circles -->
+        <div style="position: absolute; top: -100px; right: -100px; width: 300px; height: 300px; border-radius: 50%; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%); z-index: 1;"></div>
+        <div style="position: absolute; bottom: -50px; left: 10%; width: 200px; height: 200px; border-radius: 50%; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%); z-index: 1;"></div>
+    </section>
+
+    <main>
+        <div class="article-content">
+            <a href="../blog.html" class="back-to-blog"><i class="fas fa-arrow-left"></i> Retour au blog</a>
+
+            <nav class="breadcrumb">
+                <a href="../index.html">Accueil</a> <span>›</span> <a href="../blog.html">Blog</a> <span>›</span> Transcrire vos réunions Teams, Zoom et Google Meet
+            </nav>
+            
+            <article>
+                
+                <p>La visioconférence est devenue le quotidien de millions de professionnels. Entre les réunions <strong>Microsoft Teams</strong>, les appels <strong>Zoom</strong> et les sessions <strong>Google Meet</strong>, une journée de travail type peut facilement compter 4 à 6 visioconférences. Le problème ? Tout ce qui se dit dans ces réunions disparaît dès que l'appel se termine — sauf si vous avez un outil de <strong>transcription automatique</strong>.</p>
+
+                <p>Dans ce guide, nous vous montrons comment <strong>transcrire automatiquement vos réunions</strong> sur chaque plateforme grâce à <a href="../index.html">Gilbert</a>, l'IA française souveraine qui va bien au-delà de la simple transcription.</p>
+                
+                <hr>
+                
+                <h2>Pourquoi transcrire vos visioconférences ?</h2>
+                
+                <p>Avant de plonger dans le mode d'emploi technique, rappelons pourquoi la transcription de vos réunions est devenue un enjeu stratégique :</p>
+
+                <ul>
+                    <li><strong>Mémoire collective</strong> — Les études montrent que nous oublions 50 % du contenu d'une réunion dans l'heure qui suit. La transcription capture 100 % des échanges.</li>
+                    <li><strong>Inclusion des absents</strong> — Les collaborateurs qui n'ont pas pu assister à la réunion accèdent à l'intégralité des discussions, pas seulement à un résumé subjectif.</li>
+                    <li><strong>Base pour le compte rendu</strong> — La transcription sert de matière première pour générer un <a href="comment-faire-compte-rendu-reunion-efficace.html">compte rendu de réunion structuré</a> en quelques minutes.</li>
+                    <li><strong>Traçabilité des décisions</strong> — En cas de désaccord ou de malentendu, la transcription fait foi. Qui a dit quoi, quand, et dans quel contexte.</li>
+                    <li><strong>Conformité réglementaire</strong> — Dans certains secteurs (juridique, médical, financier), la documentation des échanges est une obligation légale.</li>
+                </ul>
+
+                <div class="highlight">
+                    <p>📊 <strong>Chiffre clé</strong> : les entreprises qui transcrivent systématiquement leurs réunions réduisent de 40 % le temps consacré aux emails de suivi et aux échanges de clarification post-réunion.</p>
+                </div>
+                
+                <hr>
+                
+                <h2>Transcrire une réunion Microsoft Teams avec Gilbert</h2>
+                
+                <p><strong>Microsoft Teams</strong> est la plateforme de visioconférence la plus utilisée en entreprise en France. Voici comment connecter Gilbert pour transcrire automatiquement vos réunions Teams :</p>
+
+                <div class="step-box">
+                    <strong>Étape 1 :</strong> Connectez-vous à votre espace Gilbert et accédez aux paramètres d'intégration.
+                </div>
+                <div class="step-box">
+                    <strong>Étape 2 :</strong> Sélectionnez « Microsoft Teams » dans la liste des intégrations disponibles et autorisez la connexion avec votre compte Microsoft 365.
+                </div>
+                <div class="step-box">
+                    <strong>Étape 3 :</strong> Configurez vos préférences : transcription automatique pour toutes les réunions ou activation manuelle au cas par cas.
+                </div>
+                <div class="step-box">
+                    <strong>Étape 4 :</strong> Lors de votre prochaine réunion Teams, Gilbert rejoint automatiquement l'appel en tant que participant silencieux et commence la transcription.
+                </div>
+                <div class="step-box">
+                    <strong>Étape 5 :</strong> À la fin de la réunion, retrouvez votre transcription complète et votre compte rendu structuré dans votre tableau de bord Gilbert.
+                </div>
+
+                <p>Gilbert reconnaît automatiquement les différents intervenants et attribue chaque prise de parole au bon participant, même lorsque plusieurs personnes s'expriment depuis la même salle.</p>
+                
+                <hr>
+                
+                <h2>Transcrire une réunion Zoom avec Gilbert</h2>
+                
+                <p><strong>Zoom</strong> reste très populaire pour les réunions externes, les webinaires et les formations. L'intégration avec Gilbert est tout aussi simple :</p>
+
+                <div class="step-box">
+                    <strong>Étape 1 :</strong> Depuis votre espace Gilbert, connectez votre compte Zoom via l'onglet Intégrations.
+                </div>
+                <div class="step-box">
+                    <strong>Étape 2 :</strong> Autorisez Gilbert à accéder à vos réunions Zoom planifiées via l'API Zoom.
+                </div>
+                <div class="step-box">
+                    <strong>Étape 3 :</strong> Choisissez le mode de transcription : en temps réel (Gilbert rejoint l'appel) ou post-réunion (à partir de l'enregistrement audio/vidéo).
+                </div>
+                <div class="step-box">
+                    <strong>Étape 4 :</strong> Pour le mode post-réunion, activez l'enregistrement dans les paramètres Zoom et importez le fichier dans Gilbert.
+                </div>
+                <div class="step-box">
+                    <strong>Étape 5 :</strong> Gilbert traite l'audio, identifie les locuteurs et génère une transcription horodatée complète en quelques minutes.
+                </div>
+
+                <p>Le mode post-réunion est particulièrement utile pour les entreprises qui enregistrent déjà leurs appels Zoom dans le cloud et souhaitent les transcrire a posteriori.</p>
+                
+                <hr>
+                
+                <h2>Transcrire une réunion Google Meet avec Gilbert</h2>
+                
+                <p>Pour les entreprises qui utilisent <strong>Google Workspace</strong>, Google Meet est la plateforme de visioconférence par défaut. Voici comment l'associer à Gilbert :</p>
+
+                <div class="step-box">
+                    <strong>Étape 1 :</strong> Connectez votre compte Google Workspace à Gilbert depuis les paramètres d'intégration.
+                </div>
+                <div class="step-box">
+                    <strong>Étape 2 :</strong> Accordez les autorisations nécessaires pour que Gilbert accède à votre agenda Google Calendar et détecte vos réunions Meet à venir.
+                </div>
+                <div class="step-box">
+                    <strong>Étape 3 :</strong> Activez la transcription automatique pour les réunions Meet sélectionnées ou pour toutes les réunions par défaut.
+                </div>
+                <div class="step-box">
+                    <strong>Étape 4 :</strong> Gilbert rejoint le Meet au démarrage de la réunion, transcrit les échanges en temps réel et identifie chaque participant.
+                </div>
+                <div class="step-box">
+                    <strong>Étape 5 :</strong> Le compte rendu et la transcription sont disponibles dans votre espace Gilbert, avec possibilité d'export vers Google Docs.
+                </div>
+
+                <p>L'intégration native avec Google Calendar permet à Gilbert de détecter automatiquement vos réunions et de se préparer à les transcrire sans aucune intervention manuelle de votre part.</p>
+                
+                <hr>
+                
+                <h2>De la transcription au compte rendu intelligent</h2>
+                
+                <p>La transcription brute d'une réunion d'une heure peut facilement dépasser 10 000 mots. Personne ne va relire tout cela. C'est là que Gilbert se distingue radicalement des outils de transcription classiques.</p>
+
+                <p>Après la transcription, Gilbert applique automatiquement plusieurs couches d'intelligence artificielle :</p>
+
+                <ul>
+                    <li><strong>Synthèse structurée</strong> — L'IA condense la transcription en un compte rendu organisé par thème, avec les points clés mis en évidence.</li>
+                    <li><strong>Extraction des décisions</strong> — Chaque décision prise pendant la réunion est identifiée et formulée clairement.</li>
+                    <li><strong>Plan d'action automatique</strong> — Gilbert détecte les engagements (« Je m'en occupe pour vendredi ») et génère un tableau d'actions avec responsables et échéances.</li>
+                    <li><strong>Identification des sujets en suspens</strong> — Les points non résolus sont signalés pour être traités lors de la prochaine réunion.</li>
+                    <li><strong>Adaptation au vocabulaire métier</strong> — Que vous soyez dans le <a href="personnalisation-ia-secteur-juridique-guide-complet.html">juridique</a>, la tech ou la finance, Gilbert comprend et restitue le jargon de votre secteur.</li>
+                </ul>
+
+                <blockquote>
+                    <p>"On est passé de 45 minutes de rédaction après chaque réunion à un compte rendu parfait envoyé en 3 minutes. Gilbert a changé notre façon de travailler." – <em>Responsable opérations, entreprise SaaS</em></p>
+                </blockquote>
+                
+                <hr>
+                
+                <h2>Comparatif : Gilbert vs outils de transcription intégrés</h2>
+                
+                <p>Teams, Zoom et Google Meet proposent tous des fonctionnalités de transcription natives. Mais ces outils présentent des limites significatives par rapport à une solution spécialisée comme Gilbert :</p>
+
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Fonctionnalité</th>
+                            <th>Outils intégrés</th>
+                            <th>Gilbert</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Transcription en français</td>
+                            <td>Qualité moyenne, erreurs fréquentes</td>
+                            <td>IA optimisée pour le français, +95 % de précision</td>
+                        </tr>
+                        <tr>
+                            <td>Génération de compte rendu</td>
+                            <td>Non disponible</td>
+                            <td>Compte rendu structuré automatique</td>
+                        </tr>
+                        <tr>
+                            <td>Plan d'action</td>
+                            <td>Non disponible</td>
+                            <td>Extraction automatique des actions</td>
+                        </tr>
+                        <tr>
+                            <td>Multi-plateforme</td>
+                            <td>Limité à une seule plateforme</td>
+                            <td>Teams + Zoom + Meet + présentiel</td>
+                        </tr>
+                        <tr>
+                            <td>Hébergement des données</td>
+                            <td>Serveurs américains (Cloud Act)</td>
+                            <td>100 % France, <a href="rgpd-ia-comptes-rendus-reunion-conformite-garantie.html">conforme RGPD</a></td>
+                        </tr>
+                        <tr>
+                            <td>Vocabulaire métier</td>
+                            <td>Générique</td>
+                            <td>Personnalisable par secteur</td>
+                        </tr>
+                        <tr>
+                            <td>Export</td>
+                            <td>Texte brut uniquement</td>
+                            <td>PDF, Word, email, Google Docs</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>Pour une analyse plus approfondie des solutions du marché, consultez notre article sur <a href="pourquoi-choisir-ia-souveraine-francaise-2025.html">les avantages d'une IA souveraine française</a>.</p>
+                
+                <hr>
+                
+                <h2>Conclusion</h2>
+                
+                <p>Transcrire automatiquement vos réunions <strong>Teams, Zoom et Google Meet</strong> n'est plus un luxe, c'est une nécessité pour toute organisation qui veut rester productive et bien organisée. Mais la transcription seule ne suffit pas : c'est la transformation de cette transcription en intelligence actionnable qui fait la différence.</p>
+
+                <p><strong>Gilbert</strong> est la seule solution française qui combine transcription de haute précision, génération de comptes rendus intelligents et conformité RGPD totale — le tout en une seule plateforme, compatible avec vos outils de visioconférence existants.</p>
+                
+                <p><strong>Prêt à ne plus jamais perdre une information de réunion ? Testez Gilbert gratuitement pendant 14 jours.</strong></p>
+                
+                <a href="https://gilbert-assistant.ovh" class="cta-button">Essayer Gilbert gratuitement</a>
+
+                <p style="margin-top: 2rem;">Des questions sur l'intégration avec votre plateforme ? <a href="../contact.html">Contactez notre équipe</a> ou découvrez notre <a href="../api.html">API pour développeurs</a>.</p>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../assets/images/img/logo_gilbert.png" alt="Logo Gilbert" class="footer-logo" loading="lazy">
+                    <p>Gilbert est un assistant vocal souverain qui transforme votre voix en intelligence. De la parole à l'intelligence. En toute simplicité.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="../index.html#features">Fonctionnalités</a></li>
+                        <li><a href="../index.html#pricing">Tarifs</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="../conditions-utilisation.html">Conditions d'utilisation</a></li>
+                        <li><a href="../politique-confidentialite.html">Politique de confidentialité</a></li>
+                        <li><a href="../mentions-legales.html">Mentions légales</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> 07 50 94 75 43</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/company/lexiapro/?viewAsMember=true" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gilbert. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Transcrire vos réunions Teams, Zoom et Google Meet automatiquement",
+        "description": "Comment transcrire automatiquement vos réunions Teams, Zoom et Google Meet avec l'IA française Gilbert. Guide étape par étape pour chaque plateforme.",
+        "image": "https://www.gilbert-assistant.fr/assets/images/img/logo_gilbert.png",
+        "author": {"@type": "Person", "name": "Hugo Fouan"},
+        "publisher": {"@type": "Organization", "name": "Gilbert", "logo": {"@type": "ImageObject", "url": "https://www.gilbert-assistant.fr/assets/images/img/logo_gilbert.png"}},
+        "datePublished": "2025-06-05",
+        "dateModified": "2025-06-05",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.gilbert-assistant.fr/blog/transcrire-reunion-teams-zoom-google-meet-automatiquement.html"}
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.gilbert-assistant.fr/"},
+            {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.gilbert-assistant.fr/blog.html"},
+            {"@type": "ListItem", "position": 3, "name": "Transcrire vos réunions Teams, Zoom et Google Meet automatiquement"}
+        ]
+    }
+    </script>
+</body>
+</html>
